@@ -1,0 +1,877 @@
+2021-03-11 09:52:19,074:INFO: Average reward: 22.16 +/- 1.26
+2021-03-11 09:52:19,559:INFO: Average reward: 39.90 +/- 2.79
+2021-03-11 09:52:20,238:INFO: Average reward: 45.43 +/- 2.52
+2021-03-11 09:52:20,762:INFO: Average reward: 67.93 +/- 5.78
+2021-03-11 09:52:21,199:INFO: Average reward: 71.32 +/- 4.94
+2021-03-11 09:52:21,646:INFO: Average reward: 79.48 +/- 6.35
+2021-03-11 09:52:22,187:INFO: Average reward: 89.41 +/- 7.60
+2021-03-11 09:52:22,682:INFO: Average reward: 69.07 +/- 4.09
+2021-03-11 09:52:23,271:INFO: Average reward: 65.63 +/- 2.97
+2021-03-11 09:52:23,770:INFO: Average reward: 61.84 +/- 4.42
+2021-03-11 09:52:24,294:INFO: Average reward: 76.73 +/- 6.08
+2021-03-11 09:52:24,873:INFO: Average reward: 104.63 +/- 9.58
+2021-03-11 09:52:25,440:INFO: Average reward: 111.82 +/- 6.26
+2021-03-11 09:52:25,988:INFO: Average reward: 95.20 +/- 6.41
+2021-03-11 09:52:26,536:INFO: Average reward: 89.05 +/- 5.71
+2021-03-11 09:52:27,101:INFO: Average reward: 88.77 +/- 5.54
+2021-03-11 09:52:27,600:INFO: Average reward: 123.62 +/- 7.14
+2021-03-11 09:52:28,167:INFO: Average reward: 174.27 +/- 8.11
+2021-03-11 09:52:28,706:INFO: Average reward: 197.60 +/- 1.89
+2021-03-11 09:52:29,215:INFO: Average reward: 158.58 +/- 8.12
+2021-03-11 09:52:29,693:INFO: Average reward: 114.29 +/- 5.12
+2021-03-11 09:52:30,298:INFO: Average reward: 127.67 +/- 3.86
+2021-03-11 09:52:30,768:INFO: Average reward: 129.60 +/- 6.04
+2021-03-11 09:52:31,233:INFO: Average reward: 113.29 +/- 3.31
+2021-03-11 09:52:31,673:INFO: Average reward: 99.60 +/- 2.30
+2021-03-11 09:52:32,121:INFO: Average reward: 96.50 +/- 2.58
+2021-03-11 09:52:32,559:INFO: Average reward: 113.53 +/- 4.03
+2021-03-11 09:52:32,998:INFO: Average reward: 168.55 +/- 5.40
+2021-03-11 09:52:33,465:INFO: Average reward: 197.50 +/- 2.37
+2021-03-11 09:52:33,907:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:34,348:INFO: Average reward: 198.80 +/- 1.14
+2021-03-11 09:52:34,785:INFO: Average reward: 191.10 +/- 3.76
+2021-03-11 09:52:35,222:INFO: Average reward: 191.40 +/- 3.90
+2021-03-11 09:52:35,663:INFO: Average reward: 168.55 +/- 7.58
+2021-03-11 09:52:36,113:INFO: Average reward: 176.82 +/- 5.93
+2021-03-11 09:52:36,561:INFO: Average reward: 184.20 +/- 5.77
+2021-03-11 09:52:37,029:INFO: Average reward: 187.70 +/- 5.70
+2021-03-11 09:52:37,509:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:37,984:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:38,529:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:39,048:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:39,486:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:39,939:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:40,391:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:40,869:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:41,335:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:41,801:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:42,268:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:42,742:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:43,209:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:43,677:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:44,139:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:44,590:INFO: Average reward: 199.80 +/- 0.19
+2021-03-11 09:52:45,059:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:45,521:INFO: Average reward: 180.55 +/- 9.69
+2021-03-11 09:52:45,992:INFO: Average reward: 159.75 +/- 10.77
+2021-03-11 09:52:46,447:INFO: Average reward: 135.21 +/- 9.35
+2021-03-11 09:52:46,949:INFO: Average reward: 143.08 +/- 8.98
+2021-03-11 09:52:47,466:INFO: Average reward: 166.33 +/- 9.24
+2021-03-11 09:52:47,921:INFO: Average reward: 171.73 +/- 6.78
+2021-03-11 09:52:48,400:INFO: Average reward: 184.00 +/- 5.70
+2021-03-11 09:52:48,847:INFO: Average reward: 199.70 +/- 0.28
+2021-03-11 09:52:49,296:INFO: Average reward: 197.80 +/- 1.39
+2021-03-11 09:52:49,740:INFO: Average reward: 195.70 +/- 3.49
+2021-03-11 09:52:50,207:INFO: Average reward: 198.60 +/- 0.98
+2021-03-11 09:52:50,675:INFO: Average reward: 199.10 +/- 0.85
+2021-03-11 09:52:51,140:INFO: Average reward: 191.60 +/- 5.07
+2021-03-11 09:52:51,593:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:52,067:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:52,545:INFO: Average reward: 196.20 +/- 2.47
+2021-03-11 09:52:53,034:INFO: Average reward: 159.00 +/- 12.25
+2021-03-11 09:52:53,514:INFO: Average reward: 166.36 +/- 12.86
+2021-03-11 09:52:54,002:INFO: Average reward: 177.27 +/- 12.67
+2021-03-11 09:52:54,465:INFO: Average reward: 73.96 +/- 12.47
+2021-03-11 09:52:54,947:INFO: Average reward: 181.30 +/- 17.74
+2021-03-11 09:52:55,404:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:55,892:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:56,355:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:56,817:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:57,272:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:57,716:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:58,171:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:58,639:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:59,134:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:52:59,612:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:00,065:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:00,522:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:01,005:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:01,546:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:02,025:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:02,525:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:03,056:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:03,620:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:04,148:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:04,627:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:05,165:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:05,658:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:06,282:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:06,767:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:07,225:INFO: Average reward: 200.00 +/- 0.00
+2021-03-11 09:53:07,226:INFO: - Training done.
+2021-03-11 09:53:07,258:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,259:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,260:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,261:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'Noto Sans Cypriot' (NotoSansCypriot-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'Noto Sans Syloti Nagri' (NotoSansSylotiNagri-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'Noto Sans Old Turkic' (NotoSansOldTurkic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,262:DEBUG: findfont: score(<Font 'Sinhala Sangam MN' (Sinhala Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,263:DEBUG: findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,263:DEBUG: findfont: score(<Font 'Noto Sans Bamum' (NotoSansBamum-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,263:DEBUG: findfont: score(<Font 'Superclarendon' (SuperClarendon.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,263:DEBUG: findfont: score(<Font 'Noto Sans Linear B' (NotoSansLinearB-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,263:DEBUG: findfont: score(<Font 'Muna' (Muna.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,264:DEBUG: findfont: score(<Font 'Noto Sans Kaithi' (NotoSansKaithi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'American Typewriter' (AmericanTypewriter.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'Party LET' (PartyLET-plain.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font '.SF NS Mono' (SFNSMono.ttf) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'Bodoni 72 Oldstyle' (Bodoni 72 OS.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'Beirut' (Beirut.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'Noto Sans Imperial Aramaic' (NotoSansImperialAramaic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W2.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,265:DEBUG: findfont: score(<Font 'New Peninim MT' (NewPeninimMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Tamil Sangam MN' (Tamil Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Noto Sans Meroitic' (NotoSansMeroitic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Apple SD Gothic Neo' (AppleSDGothicNeo.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'PT Serif Caption' (PTSerifCaption.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Outline 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold.ttf) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Lucida Grande' (LucidaGrande.ttc) normal normal 400 normal>) = 2.777272727272727
+2021-03-11 09:53:07,266:DEBUG: findfont: score(<Font 'Noto Sans Mandaic' (NotoSansMandaic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Noto Sans Meetei Mayek' (NotoSansMeeteiMayek-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Noto Sans Syriac' (NotoSansSyriac-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Noto Sans Bassa Vah' (NotoSansBassaVah-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'System Font' (SFNS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Brush Script MT' (Brush Script.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Bradley Hand' (Bradley Hand Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'Noto Nastaliq Urdu' (NotoNastaliq.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,267:DEBUG: findfont: score(<Font 'ITF Devanagari' (ITFDevanagari.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Noto Sans New Tai Lue' (NotoSansNewTaiLue-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Geeza Pro' (GeezaPro.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Marker Felt' (MarkerFelt.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Noto Sans Caucasian Albanian' (NotoSansCaucasianAlbanian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Mishafi' (Mishafi.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,268:DEBUG: findfont: score(<Font 'Lao Sangam MN' (Lao Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Comic Sans MS' (Comic Sans MS Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Noto Sans Egyptian Hieroglyphs' (NotoSansEgyptianHieroglyphs-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Lao MN' (Lao MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Khmer MN' (Khmer MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Bangla MN' (Bangla MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Devanagari Sangam MN' (Devanagari Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Hiragino Sans GB' (Hiragino Sans GB.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'STIXVariants' (STIXVar.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,269:DEBUG: findfont: score(<Font 'Noto Sans Oriya' (NotoSansOriya.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font '.Arabic UI Display' (ArabicUIDisplay.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Noto Sans Psalter Pahlavi' (NotoSansPsalterPahlavi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Gujarati Sangam MN' (Gujarati Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Skia' (Skia.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Noto Sans Hatran' (NotoSansHatran-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Noto Sans Lydian' (NotoSansLydian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.otf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Noto Sans Marchen' (NotoSansMarchen-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Noto Sans Mahajani' (NotoSansMahajani-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,270:DEBUG: findfont: score(<Font 'Georgia' (Georgia Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Lycian' (NotoSansLycian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Pau Cin Hau' (NotoSansPauCinHau-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Gothic' (NotoSansGothic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Telugu Sangam MN' (Telugu Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Cuneiform' (NotoSansCuneiform-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Sora Sompeng' (NotoSansSoraSompeng-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'KufiStandardGK' (KufiStandardGK.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Bangla Sangam MN' (Bangla Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Mro' (NotoSansMro-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Georgia' (Georgia Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,271:DEBUG: findfont: score(<Font 'Noto Sans Manichaean' (NotoSansManichaean-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Osage' (NotoSansOsage-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Inscriptional Pahlavi' (NotoSansInscriptionalPahlavi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Sinhala MN' (Sinhala MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Hiragino Mincho ProN' (ヒラギノ明朝 ProN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Carian' (NotoSansCarian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Coptic' (NotoSansCoptic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Tai Tham' (NotoSansTaiTham-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Noto Sans Miao' (NotoSansMiao-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Diwan Thuluth' (Diwan Thuluth.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'Times' (Times.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,272:DEBUG: findfont: score(<Font 'STIXIntegralsD' (STIXIntDBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Apple Symbols' (Apple Symbols.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Noto Sans Duployan' (NotoSansDuployan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Krungthep' (Krungthep.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Noto Sans Kayah Li' (NotoSansKayahLi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Thonburi' (Thonburi.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font '.SF NS Mono' (SFNSMonoItalic.ttf) italic normal light normal>) = 11.24
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'Euphemia UCAS' (EuphemiaCAS.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font '.Aqua Kana' (AquaKana.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,273:DEBUG: findfont: score(<Font '.SF Compact' (SFCompactItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Noto Serif Ahom' (NotoSerifAhom-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Diwan Kufi' (Diwan Kufi.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Noto Sans Lisu' (NotoSansLisu-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Noto Sans Javanese' (NotoSansJavanese-Regular.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Noto Sans Runic' (NotoSansRunic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Courier New' (Courier New.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Khmer Sangam MN' (Khmer Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Copperplate' (Copperplate.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,274:DEBUG: findfont: score(<Font 'Noto Sans Kannada' (NotoSansKannada.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Bodoni 72' (Bodoni 72.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W5.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'PingFang HK' (PingFang.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Noto Sans Tagbanwa' (NotoSansTagbanwa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Galvji' (Galvji.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'STIXVariants' (STIXVarBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W9.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Cochin' (Cochin.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Plantagenet Cherokee' (PlantagenetCherokee.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,275:DEBUG: findfont: score(<Font 'Noto Sans Hanifi Rohingya' (NotoSansHanifiRohingya-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Optima' (Optima.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Chalkboard' (Chalkboard.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Noto Sans Pahawh Hmong' (NotoSansPahawhHmong-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Hoefler Text' (Hoefler Text.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Oriya MN' (Oriya MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Palatino' (Palatino.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Noto Sans Adlam' (NotoSansAdlam-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Athelas' (Athelas.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Bodoni Ornaments' (Bodoni Ornaments.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,276:DEBUG: findfont: score(<Font 'Kohinoor Devanagari' (Kohinoor.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Silom' (Silom.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Kefa' (Kefa.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Noto Sans Tifinagh' (NotoSansTifinagh-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W4.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Noto Sans Old North Arabian' (NotoSansOldNorthArabian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Wingdings 3' (Wingdings 3.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Hiragino Maru Gothic Pro' (ヒラギノ丸ゴ ProN W4.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Arial Rounded MT Bold' (Arial Rounded Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,277:DEBUG: findfont: score(<Font 'Noto Sans Tai Le' (NotoSansTaiLe-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Myanmar MN' (Myanmar MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'PT Sans' (PTSans.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Noto Sans Linear A' (NotoSansLinearA-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W6.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Noto Sans Lepcha' (NotoSansLepcha-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Arial Black' (Arial Black.ttf) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Comic Sans MS' (Comic Sans MS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Noto Serif Balinese' (NotoSerifBalinese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Arial' (Arial Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2021-03-11 09:53:07,278:DEBUG: findfont: score(<Font 'Symbol' (Symbol.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Noto Sans Phoenician' (NotoSansPhoenician-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Noto Sans Tirhuta' (NotoSansTirhuta-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Bodoni 72 Smallcaps' (Bodoni 72 Smallcaps Book.ttf) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Noto Sans Nabataean' (NotoSansNabataean-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Corsiva Hebrew' (Corsiva.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Noto Sans Saurashtra' (NotoSansSaurashtra-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Chalkduster' (Chalkduster.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Courier New' (Courier New Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Damascus' (Damascus.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Noto Sans Osmanya' (NotoSansOsmanya-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,279:DEBUG: findfont: score(<Font 'Avenir Next Condensed' (Avenir Next Condensed.ttc) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Helvetica' (Helvetica.ttc) normal normal 400 normal>) = 7.322727272727273
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Noto Sans Inscriptional Parthian' (NotoSansInscriptionalParthian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Noto Sans Samaritan' (NotoSansSamaritan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Ayuthaya' (Ayuthaya.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Noto Sans Warang Citi' (NotoSansWarangCiti-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Courier New' (Courier New Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Mishafi Gold' (Mishafi Gold.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'AppleMyungjo' (AppleMyungjo.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Noto Sans Khudawadi' (NotoSansKhudawadi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,280:DEBUG: findfont: score(<Font 'Verdana' (Verdana Bold Italic.ttf) italic normal bold normal>) = 4.971363636363637
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'SignPainter' (SignPainter.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Noto Sans Mongolian' (NotoSansMongolian-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Kohinoor Telugu' (KohinoorTelugu.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Noto Sans Glagolitic' (NotoSansGlagolitic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Arial' (Arial Bold.ttf) normal normal bold normal>) = 6.698636363636363
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Noto Sans Sundanese' (NotoSansSundanese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Gurmukhi MT' (Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.otf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W3.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Noto Serif Myanmar' (NotoSerifMyanmar.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'DIN Condensed' (DIN Condensed Bold.ttf) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,281:DEBUG: findfont: score(<Font 'Waseem' (Waseem.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Helvetica Neue' (HelveticaNeue.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Zapf Dingbats' (ZapfDingbats.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Kohinoor Bangla' (KohinoorBangla.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Noteworthy' (Noteworthy.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'PT Serif' (PTSerif.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font '.SF Compact Rounded' (SFCompactRounded.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Noto Sans Chakma' (NotoSansChakma-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Trattatello' (Trattatello.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Seravek' (Seravek.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,282:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Italic.ttf) italic normal 400 condensed>) = 11.25
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Didot' (Didot.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Arial' (Arial Bold Italic.ttf) italic normal bold normal>) = 7.698636363636363
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font '.LastResort' (LastResort.otf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Noto Sans Old Italic' (NotoSansOldItalic-Regular.ttf) italic normal regular normal>) = 11.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Noto Sans Old Permic' (NotoSansOldPermic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Courier New' (Courier New Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Avenir' (Avenir.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'STIXIntegralsD' (STIXIntDReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Noto Sans Buginese' (NotoSansBuginese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,283:DEBUG: findfont: score(<Font 'Noto Sans Hanunoo' (NotoSansHanunoo-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Kohinoor Gujarati' (KohinoorGujarati.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Gurmukhi MN' (Gurmukhi MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Noto Sans Elbasan' (NotoSansElbasan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Al Tarikh' (Al Tarikh.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Noto Sans Avestan' (NotoSansAvestan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Herculanum' (Herculanum.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Noto Sans Myanmar' (NotoSansMyanmar.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Verdana' (Verdana Bold.ttf) normal normal bold normal>) = 3.9713636363636367
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'DIN Alternate' (DIN Alternate Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,284:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W8.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Charter' (Charter.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Noto Sans Batak' (NotoSansBatak-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Zapfino' (Zapfino.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Papyrus' (Papyrus.ttc) normal normal 400 condensed>) = 10.25
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Al Nile' (Al Nile.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Heiti TC' (STHeiti Medium.ttc) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W1.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Noto Sans Limbu' (NotoSansLimbu-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Farisi' (Farisi.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,285:DEBUG: findfont: score(<Font 'Sathu' (Sathu.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Marion' (Marion.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Baskerville' (Baskerville.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Malayalam MN' (Malayalam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Noto Sans Modi' (NotoSansModi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Noto Sans Kharoshthi' (NotoSansKharoshthi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font '.SF NS Rounded' (SFNSRounded.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'PT Mono' (PTMono.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Arial Hebrew' (ArialHB.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'Gurmukhi Sangam MN' (Gurmukhi Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,286:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Noto Sans Sharada' (NotoSansSharada-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'DecoType Naskh' (DecoTypeNaskh.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Gujarati MT' (GujaratiMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'System Font' (SFNSItalic.ttf) italic normal regular normal>) = 11.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Wingdings 2' (Wingdings 2.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Menlo' (Menlo.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W7.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Noto Sans Wancho' (NotoSansWancho-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Noto Sans Palmyrene' (NotoSansPalmyrene-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,287:DEBUG: findfont: score(<Font 'Snell Roundhand' (SnellRoundhand.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Apple Chancery' (Apple Chancery.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Myanmar Sangam MN' (Myanmar Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Rockwell' (Rockwell.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow.ttf) normal normal 400 condensed>) = 10.25
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'InaiMathi' (InaiMathi-MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Songti SC' (Songti.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Italic.ttf) italic normal roman normal>) = 11.145
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Bold Italic.ttf) italic normal roman normal>) = 11.145
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,288:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font '.New York' (NewYorkItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Kannada Sangam MN' (Kannada Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Hoefler Text' (Hoefler Text Ornaments.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Baghdad' (Baghdad.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Phosphate' (Phosphate.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Shree Devanagari 714' (Shree714.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Kannada MN' (Kannada MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Big Caslon' (BigCaslon.ttf) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Devanagari MT' (DevanagariMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font 'Noto Sans Bhaiksuki' (NotoSansBhaiksuki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,289:DEBUG: findfont: score(<Font '.SF Compact' (SFCompact.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Noto Sans PhagsPa' (NotoSansPhagsPa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Microsoft Sans Serif' (Microsoft Sans Serif.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Kokonor' (Kokonor.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Noto Sans Yi' (NotoSansYi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Outline 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'AppleGothic' (AppleGothic.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Bold.ttf) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,290:DEBUG: findfont: score(<Font 'Sukhumvit Set' (SukhumvitSet.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Noto Sans NKo' (NotoSansNKo-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Farah' (Farah.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Andale Mono' (Andale Mono.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Kailasa' (Kailasa.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Verdana' (Verdana Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Mshtakan' (Mshtakan.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Noto Sans Cham' (NotoSansCham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Oriya Sangam MN' (Oriya Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,291:DEBUG: findfont: score(<Font 'Iowan Old Style' (Iowan Old Style.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Noto Sans Old Persian' (NotoSansOldPersian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Gill Sans' (GillSans.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font '.New York' (NewYork.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Heiti TC' (STHeiti Light.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Noto Sans Newa' (NotoSansNewa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold Italic.ttf) italic normal bold condensed>) = 11.535
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font '.Keyboard' (Keyboard.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Noto Sans Buhid' (NotoSansBuhid-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Al Bayan' (AlBayan.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,292:DEBUG: findfont: score(<Font 'Noto Sans Rejang' (NotoSansRejang-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Tamil MN' (Tamil MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Sana' (Sana.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Wingdings' (Wingdings.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Noto Sans Ol Chiki' (NotoSansOlChiki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Luminari' (Luminari.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font '.Arabic UI Text' (ArabicUIText.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Tahoma' (Tahoma.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Tahoma' (Tahoma Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,293:DEBUG: findfont: score(<Font 'Noto Sans Old South Arabian' (NotoSansOldSouthArabian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Noto Sans Multani' (NotoSansMultani-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Noto Sans Vai' (NotoSansVai-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Telugu MN' (Telugu MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Noto Sans Ugaritic' (NotoSansUgaritic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Noto Sans Khojki' (NotoSansKhojki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Chalkboard SE' (ChalkboardSE.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Noto Sans Siddham' (NotoSansSiddham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,294:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman.ttf) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Noto Sans Tagalog' (NotoSansTagalog-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Noto Sans Ogham' (NotoSansOgham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Nadeem' (Nadeem.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Georgia' (Georgia Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Noto Sans Armenian' (NotoSansArmenian.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Noto Sans Brahmi' (NotoSansBrahmi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'Savoye LET' (Savoye LET.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,295:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.otf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Futura' (Futura.ttc) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W0.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Raanana' (Raanana.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Academy Engraved LET' (Academy Engraved LET Fonts.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Noto Sans Shavian' (NotoSansShavian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Noto Sans Thaana' (NotoSansThaana-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Noto Sans Tai Viet' (NotoSansTaiViet-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Malayalam Sangam MN' (Malayalam Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,296:DEBUG: findfont: score(<Font 'Noto Sans Old Hungarian' (NotoSansOldHungarian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,297:DEBUG: findfont: score(<Font 'Mukta Mahee' (MuktaMahee.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,297:DEBUG: findfont: score(<Font 'Avenir Next' (Avenir Next.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,297:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.otf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,297:DEBUG: findfont: score(<Font 'Noto Sans Mende Kikakui' (NotoSansMendeKikakui-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,297:DEBUG: findfont: score(<Font 'Noto Sans Takri' (NotoSansTakri-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,297:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Users/annhe/anaconda3/envs/spinningup/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2021-03-11 09:53:07,311:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2021-03-11 09:53:07,311:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,311:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+2021-03-11 09:53:07,311:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,312:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,313:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,314:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Noto Sans Cypriot' (NotoSansCypriot-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Noto Sans Syloti Nagri' (NotoSansSylotiNagri-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Noto Sans Old Turkic' (NotoSansOldTurkic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Sinhala Sangam MN' (Sinhala Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Noto Sans Bamum' (NotoSansBamum-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,315:DEBUG: findfont: score(<Font 'Superclarendon' (SuperClarendon.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Noto Sans Linear B' (NotoSansLinearB-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Muna' (Muna.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Noto Sans Kaithi' (NotoSansKaithi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'American Typewriter' (AmericanTypewriter.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Party LET' (PartyLET-plain.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font '.SF NS Mono' (SFNSMono.ttf) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Bodoni 72 Oldstyle' (Bodoni 72 OS.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Beirut' (Beirut.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Noto Sans Imperial Aramaic' (NotoSansImperialAramaic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W2.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,316:DEBUG: findfont: score(<Font 'New Peninim MT' (NewPeninimMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Tamil Sangam MN' (Tamil Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Noto Sans Meroitic' (NotoSansMeroitic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Apple SD Gothic Neo' (AppleSDGothicNeo.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'PT Serif Caption' (PTSerifCaption.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Outline 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold.ttf) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Lucida Grande' (LucidaGrande.ttc) normal normal 400 normal>) = 2.777272727272727
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Noto Sans Mandaic' (NotoSansMandaic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Noto Sans Meetei Mayek' (NotoSansMeeteiMayek-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,317:DEBUG: findfont: score(<Font 'Noto Sans Syriac' (NotoSansSyriac-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Noto Sans Bassa Vah' (NotoSansBassaVah-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'System Font' (SFNS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Brush Script MT' (Brush Script.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Arial Unicode MS' (Arial Unicode.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Bradley Hand' (Bradley Hand Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Noto Nastaliq Urdu' (NotoNastaliq.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'ITF Devanagari' (ITFDevanagari.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Noto Sans New Tai Lue' (NotoSansNewTaiLue-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Geeza Pro' (GeezaPro.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,318:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Marker Felt' (MarkerFelt.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Arial' (Arial.ttf) normal normal 400 normal>) = 6.413636363636363
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Noto Sans Caucasian Albanian' (NotoSansCaucasianAlbanian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Mishafi' (Mishafi.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Georgia' (Georgia.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Lao Sangam MN' (Lao Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Comic Sans MS' (Comic Sans MS Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Noto Sans Egyptian Hieroglyphs' (NotoSansEgyptianHieroglyphs-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Lao MN' (Lao MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,319:DEBUG: findfont: score(<Font 'Khmer MN' (Khmer MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Bangla MN' (Bangla MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Devanagari Sangam MN' (Devanagari Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Hiragino Sans GB' (Hiragino Sans GB.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'STIXVariants' (STIXVar.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Noto Sans Oriya' (NotoSansOriya.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font '.Arabic UI Display' (ArabicUIDisplay.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Noto Sans Psalter Pahlavi' (NotoSansPsalterPahlavi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Gujarati Sangam MN' (Gujarati Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Skia' (Skia.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,320:DEBUG: findfont: score(<Font 'Noto Sans Hatran' (NotoSansHatran-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Lydian' (NotoSansLydian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.otf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Marchen' (NotoSansMarchen-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Mahajani' (NotoSansMahajani-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Georgia' (Georgia Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Lycian' (NotoSansLycian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Pau Cin Hau' (NotoSansPauCinHau-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Gothic' (NotoSansGothic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Telugu Sangam MN' (Telugu Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Cuneiform' (NotoSansCuneiform-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'STIXIntegralsSm' (STIXIntSmBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,321:DEBUG: findfont: score(<Font 'Noto Sans Sora Sompeng' (NotoSansSoraSompeng-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'KufiStandardGK' (KufiStandardGK.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Bangla Sangam MN' (Bangla Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Mro' (NotoSansMro-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Georgia' (Georgia Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Manichaean' (NotoSansManichaean-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Osage' (NotoSansOsage-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Inscriptional Pahlavi' (NotoSansInscriptionalPahlavi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Sinhala MN' (Sinhala MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Hiragino Mincho ProN' (ヒラギノ明朝 ProN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Carian' (NotoSansCarian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Coptic' (NotoSansCoptic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,322:DEBUG: findfont: score(<Font 'Noto Sans Tai Tham' (NotoSansTaiTham-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Noto Sans Miao' (NotoSansMiao-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Diwan Thuluth' (Diwan Thuluth.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Times' (Times.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'STIXIntegralsD' (STIXIntDBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Apple Symbols' (Apple Symbols.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Noto Sans Duployan' (NotoSansDuployan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Krungthep' (Krungthep.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Noto Sans Kayah Li' (NotoSansKayahLi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Thonburi' (Thonburi.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font '.SF NS Mono' (SFNSMonoItalic.ttf) italic normal light normal>) = 11.24
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'Euphemia UCAS' (EuphemiaCAS.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,323:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font '.Aqua Kana' (AquaKana.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font '.SF Compact' (SFCompactItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Noto Serif Ahom' (NotoSerifAhom-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Diwan Kufi' (Diwan Kufi.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Noto Sans Lisu' (NotoSansLisu-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Noto Sans Javanese' (NotoSansJavanese-Regular.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Noto Sans Runic' (NotoSansRunic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Courier New' (Courier New.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Khmer Sangam MN' (Khmer Sangam MN.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Copperplate' (Copperplate.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,324:DEBUG: findfont: score(<Font 'Noto Sans Kannada' (NotoSansKannada.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Bodoni 72' (Bodoni 72.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W5.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'PingFang HK' (PingFang.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Noto Sans Tagbanwa' (NotoSansTagbanwa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Galvji' (Galvji.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'STIXVariants' (STIXVarBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W9.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Cochin' (Cochin.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,325:DEBUG: findfont: score(<Font 'Plantagenet Cherokee' (PlantagenetCherokee.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Noto Sans Hanifi Rohingya' (NotoSansHanifiRohingya-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Optima' (Optima.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Chalkboard' (Chalkboard.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Noto Sans Pahawh Hmong' (NotoSansPahawhHmong-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Hoefler Text' (Hoefler Text.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Oriya MN' (Oriya MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Palatino' (Palatino.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Noto Sans Adlam' (NotoSansAdlam-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Athelas' (Athelas.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Bodoni Ornaments' (Bodoni Ornaments.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,326:DEBUG: findfont: score(<Font 'Kohinoor Devanagari' (Kohinoor.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Silom' (Silom.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Kefa' (Kefa.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Noto Sans Tifinagh' (NotoSansTifinagh-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W4.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Noto Sans Old North Arabian' (NotoSansOldNorthArabian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,327:DEBUG: findfont: score(<Font 'Wingdings 3' (Wingdings 3.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Hiragino Maru Gothic Pro' (ヒラギノ丸ゴ ProN W4.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Arial Rounded MT Bold' (Arial Rounded Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Noto Sans Tai Le' (NotoSansTaiLe-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Myanmar MN' (Myanmar MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'PT Sans' (PTSans.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Noto Sans Linear A' (NotoSansLinearA-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W6.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Noto Sans Lepcha' (NotoSansLepcha-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,328:DEBUG: findfont: score(<Font 'Arial Black' (Arial Black.ttf) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Comic Sans MS' (Comic Sans MS.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Noto Serif Balinese' (NotoSerifBalinese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Verdana' (Verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Arial' (Arial Italic.ttf) italic normal 400 normal>) = 7.413636363636363
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Symbol' (Symbol.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Noto Sans Phoenician' (NotoSansPhoenician-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Noto Sans Tirhuta' (NotoSansTirhuta-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,329:DEBUG: findfont: score(<Font 'Bodoni 72 Smallcaps' (Bodoni 72 Smallcaps Book.ttf) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Noto Sans Nabataean' (NotoSansNabataean-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Corsiva Hebrew' (Corsiva.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Noto Sans Saurashtra' (NotoSansSaurashtra-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Chalkduster' (Chalkduster.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Courier New' (Courier New Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Damascus' (Damascus.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Noto Sans Osmanya' (NotoSansOsmanya-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Avenir Next Condensed' (Avenir Next Condensed.ttc) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,330:DEBUG: findfont: score(<Font 'Helvetica' (Helvetica.ttc) normal normal 400 normal>) = 7.322727272727273
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Webdings' (Webdings.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Noto Sans Inscriptional Parthian' (NotoSansInscriptionalParthian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Noto Sans Samaritan' (NotoSansSamaritan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Ayuthaya' (Ayuthaya.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Noto Sans Warang Citi' (NotoSansWarangCiti-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Courier New' (Courier New Bold Italic.ttf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'Mishafi Gold' (Mishafi Gold.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,331:DEBUG: findfont: score(<Font 'AppleMyungjo' (AppleMyungjo.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,332:DEBUG: findfont: score(<Font 'Noto Sans Khudawadi' (NotoSansKhudawadi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,333:DEBUG: findfont: score(<Font 'Verdana' (Verdana Bold Italic.ttf) italic normal bold normal>) = 4.971363636363637
+2021-03-11 09:53:07,333:DEBUG: findfont: score(<Font 'SignPainter' (SignPainter.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,333:DEBUG: findfont: score(<Font 'Noto Sans Mongolian' (NotoSansMongolian-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,333:DEBUG: findfont: score(<Font 'Kohinoor Telugu' (KohinoorTelugu.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Noto Sans Glagolitic' (NotoSansGlagolitic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Arial' (Arial Bold.ttf) normal normal bold normal>) = 6.698636363636363
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Noto Sans Sundanese' (NotoSansSundanese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Gurmukhi MT' (Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.otf) italic normal bold normal>) = 11.335
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W3.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Noto Serif Myanmar' (NotoSerifMyanmar.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'DIN Condensed' (DIN Condensed Bold.ttf) normal normal bold condensed>) = 10.535
+2021-03-11 09:53:07,334:DEBUG: findfont: score(<Font 'Waseem' (Waseem.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Helvetica Neue' (HelveticaNeue.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Zapf Dingbats' (ZapfDingbats.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Kohinoor Bangla' (KohinoorBangla.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Noteworthy' (Noteworthy.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'PT Serif' (PTSerif.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font '.SF Compact Rounded' (SFCompactRounded.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Noto Sans Chakma' (NotoSansChakma-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Trebuchet MS' (Trebuchet MS Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Trattatello' (Trattatello.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Seravek' (Seravek.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,335:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Italic.ttf) italic normal 400 condensed>) = 11.25
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Didot' (Didot.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Arial' (Arial Bold Italic.ttf) italic normal bold normal>) = 7.698636363636363
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font '.LastResort' (LastResort.otf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Noto Sans Old Italic' (NotoSansOldItalic-Regular.ttf) italic normal regular normal>) = 11.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Noto Sans Old Permic' (NotoSansOldPermic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Courier New' (Courier New Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Avenir' (Avenir.ttc) normal normal book normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'STIXIntegralsD' (STIXIntDReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Noto Sans Buginese' (NotoSansBuginese-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,336:DEBUG: findfont: score(<Font 'Noto Sans Hanunoo' (NotoSansHanunoo-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Kohinoor Gujarati' (KohinoorGujarati.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Gurmukhi MN' (Gurmukhi MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Noto Sans Elbasan' (NotoSansElbasan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Al Tarikh' (Al Tarikh.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Noto Sans Avestan' (NotoSansAvestan-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'Herculanum' (Herculanum.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,337:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Noto Sans Myanmar' (NotoSansMyanmar.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Verdana' (Verdana Bold.ttf) normal normal bold normal>) = 3.9713636363636367
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'DIN Alternate' (DIN Alternate Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W8.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Charter' (Charter.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Noto Sans Batak' (NotoSansBatak-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Zapfino' (Zapfino.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Papyrus' (Papyrus.ttc) normal normal 400 condensed>) = 10.25
+2021-03-11 09:53:07,338:DEBUG: findfont: score(<Font 'Al Nile' (Al Nile.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Heiti TC' (STHeiti Medium.ttc) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W1.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntUpDReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Noto Sans Limbu' (NotoSansLimbu-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Farisi' (Farisi.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Sathu' (Sathu.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Marion' (Marion.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Baskerville' (Baskerville.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,339:DEBUG: findfont: score(<Font 'Malayalam MN' (Malayalam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'Noto Sans Modi' (NotoSansModi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'Noto Sans Kharoshthi' (NotoSansKharoshthi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font '.SF NS Rounded' (SFNSRounded.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'PT Mono' (PTMono.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'Arial Hebrew' (ArialHB.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'Gurmukhi Sangam MN' (Gurmukhi Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,340:DEBUG: findfont: score(<Font 'Noto Sans Sharada' (NotoSansSharada-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'DecoType Naskh' (DecoTypeNaskh.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Gujarati MT' (GujaratiMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'System Font' (SFNSItalic.ttf) italic normal regular normal>) = 11.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Wingdings 2' (Wingdings 2.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Menlo' (Menlo.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W7.ttc) normal normal 700 normal>) = 10.335
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Noto Sans Wancho' (NotoSansWancho-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Noto Sans Palmyrene' (NotoSansPalmyrene-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,341:DEBUG: findfont: score(<Font 'Snell Roundhand' (SnellRoundhand.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Apple Chancery' (Apple Chancery.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Myanmar Sangam MN' (Myanmar Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Rockwell' (Rockwell.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow.ttf) normal normal 400 condensed>) = 10.25
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'InaiMathi' (InaiMathi-MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Songti SC' (Songti.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Italic.ttf) italic normal roman normal>) = 11.145
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Bold Italic.ttf) italic normal roman normal>) = 11.145
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 8 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,342:DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font '.New York' (NewYorkItalic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Kannada Sangam MN' (Kannada Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Hoefler Text' (Hoefler Text Ornaments.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Baghdad' (Baghdad.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Phosphate' (Phosphate.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Shree Devanagari 714' (Shree714.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Kannada MN' (Kannada MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Big Caslon' (BigCaslon.ttf) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Devanagari MT' (DevanagariMT.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,343:DEBUG: findfont: score(<Font 'Noto Sans Bhaiksuki' (NotoSansBhaiksuki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font '.SF Compact' (SFCompact.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'STIXIntegralsUp' (STIXIntUpReg.otf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Noto Sans PhagsPa' (NotoSansPhagsPa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Microsoft Sans Serif' (Microsoft Sans Serif.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Kokonor' (Kokonor.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Noto Sans Yi' (NotoSansYi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Outline 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'AppleGothic' (AppleGothic.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,344:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman Bold.ttf) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Sukhumvit Set' (SukhumvitSet.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Noto Sans NKo' (NotoSansNKo-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Farah' (Farah.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Andale Mono' (Andale Mono.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Kailasa' (Kailasa.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Verdana' (Verdana Italic.ttf) italic normal 400 normal>) = 4.6863636363636365
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Impact' (Impact.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Mshtakan' (Mshtakan.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,345:DEBUG: findfont: score(<Font 'Noto Sans Cham' (NotoSansCham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Oriya Sangam MN' (Oriya Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Iowan Old Style' (Iowan Old Style.ttc) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Noto Sans Old Persian' (NotoSansOldPersian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Gill Sans' (GillSans.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font '.New York' (NewYork.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Heiti TC' (STHeiti Light.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Noto Sans Newa' (NotoSansNewa-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Arial Narrow' (Arial Narrow Bold Italic.ttf) italic normal bold condensed>) = 11.535
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font '.Keyboard' (Keyboard.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Noto Sans Buhid' (NotoSansBuhid-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,346:DEBUG: findfont: score(<Font 'Al Bayan' (AlBayan.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Noto Sans Rejang' (NotoSansRejang-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Tamil MN' (Tamil MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Sana' (Sana.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Wingdings' (Wingdings.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Noto Sans Ol Chiki' (NotoSansOlChiki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Luminari' (Luminari.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font '.Arabic UI Text' (ArabicUIText.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Apple Braille' (Apple Braille Pinpoint 6 Dot.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'Tahoma' (Tahoma.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,347:DEBUG: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntUpSmBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Tahoma' (Tahoma Bold.ttf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Noto Sans Old South Arabian' (NotoSansOldSouthArabian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.otf) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Noto Sans Multani' (NotoSansMultani-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Noto Sans Vai' (NotoSansVai-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Telugu MN' (Telugu MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Noto Sans Ugaritic' (NotoSansUgaritic-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Noto Sans Khojki' (NotoSansKhojki-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,348:DEBUG: findfont: score(<Font 'Chalkboard SE' (ChalkboardSE.ttc) normal normal light normal>) = 10.24
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Noto Sans Siddham' (NotoSansSiddham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Times New Roman' (Times New Roman.ttf) normal normal roman normal>) = 10.145
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Noto Sans Tagalog' (NotoSansTagalog-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Noto Sans Ogham' (NotoSansOgham-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Nadeem' (Nadeem.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Georgia' (Georgia Italic.ttf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Noto Sans Armenian' (NotoSansArmenian.ttc) normal normal black normal>) = 10.525
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Noto Sans Brahmi' (NotoSansBrahmi-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'Savoye LET' (Savoye LET.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,349:DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.otf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Futura' (Futura.ttc) normal normal medium normal>) = 10.145
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Hiragino Sans' (ヒラギノ角ゴシック W0.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Raanana' (Raanana.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Academy Engraved LET' (Academy Engraved LET Fonts.ttf) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Noto Sans Shavian' (NotoSansShavian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Noto Sans Thaana' (NotoSansThaana-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Noto Sans Tai Viet' (NotoSansTaiViet-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Malayalam Sangam MN' (Malayalam Sangam MN.ttc) normal normal 400 normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Noto Sans Old Hungarian' (NotoSansOldHungarian-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,350:DEBUG: findfont: score(<Font 'Mukta Mahee' (MuktaMahee.ttc) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,351:DEBUG: findfont: score(<Font 'Avenir Next' (Avenir Next.ttc) normal normal bold normal>) = 10.335
+2021-03-11 09:53:07,351:DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.otf) italic normal 400 normal>) = 11.05
+2021-03-11 09:53:07,351:DEBUG: findfont: score(<Font 'Noto Sans Mende Kikakui' (NotoSansMendeKikakui-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,351:DEBUG: findfont: score(<Font 'Noto Sans Takri' (NotoSansTakri-Regular.ttf) normal normal regular normal>) = 10.05
+2021-03-11 09:53:07,351:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/annhe/anaconda3/envs/spinningup/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
