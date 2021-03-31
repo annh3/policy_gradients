@@ -125,6 +125,7 @@ class PPO(PolicyGradient):
 
         loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() # OMG WILL THIS WORK... WE WILL SEE
         loss.backward()
+        # torch.nn.utils.clip_grad_norm_(self.policy.parameters(), 1)
         self.optimizer.step()
 
         #######################################################
