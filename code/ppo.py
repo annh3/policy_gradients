@@ -58,11 +58,11 @@ class PPO(PolicyGradient):
                 #pdb.set_trace()
                 action = self.policy.act(states[-1][None])[0]
                 state_torch = states[-1][None]
-                pdb.set_trace()
-                state_torch = np2torch(state)
-                action_torch = np2torch(action)
+                #pdb.set_trace()
+                state_torch = np2torch(state_torch)
+                action_torch = np2torch(np.asarray(action))
                 log_prob = self.policy.action_distribution(state_torch).log_prob(action_torch) 
-                pdb.set_trace()
+                log_prob = log_prob.detach().numpy()
                 state, reward, done, info = env.step(action)
                 actions.append(action)
                 rewards.append(reward)
@@ -78,7 +78,7 @@ class PPO(PolicyGradient):
             path = {"observation" : np.array(states),
                     "reward" : np.array(rewards),
                     "action" : np.array(actions),
-                    "prev_log_prob": np.array(prev_logprobs)}
+                    "prev_logprob": np.array(prev_logprobs)}
             paths.append(path)
             episode += 1
             if num_episodes and episode >= num_episodes:
@@ -111,6 +111,8 @@ class PPO(PolicyGradient):
         observations = np2torch(observations)
         actions = np2torch(actions)
         advantages = np2torch(advantages)
+        #pdb.set_trace()
+        prev_logprobs = np2torch(prev_logprobs)
         #######################################################
         #########   YOUR CODE HERE - 5-7 lines.    ############
         self.optimizer.zero_grad()
