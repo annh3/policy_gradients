@@ -55,8 +55,14 @@ class PPO(PolicyGradient):
 
             for step in range(self.config.max_ep_len):
                 states.append(state)
+                #pdb.set_trace()
                 action = self.policy.act(states[-1][None])[0]
-                log_prob = self.policy.action_distribution(states[-1][None]).log_prob(action) 
+                state_torch = states[-1][None]
+                pdb.set_trace()
+                state_torch = np2torch(state)
+                action_torch = np2torch(action)
+                log_prob = self.policy.action_distribution(state_torch).log_prob(action_torch) 
+                pdb.set_trace()
                 state, reward, done, info = env.step(action)
                 actions.append(action)
                 rewards.append(reward)
@@ -124,7 +130,7 @@ class PPO(PolicyGradient):
 
     # override inherited method
     def train(self):
-                """
+        """
         Performs training
 
         You do not have to change or use anything here, but take a look
