@@ -53,6 +53,10 @@ def build_mlp(
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+def print_network_grads(network):
+    for _ in network.state_dict():
+        pass
+
 def np2torch(x, cast_double_to_float=True):
     """
     Utility function that accepts a numpy array and does the following:
