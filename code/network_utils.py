@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from collections import OrderedDict
+import pdb
 
 def build_mlp(
           input_size,
@@ -53,9 +54,16 @@ def build_mlp(
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-def print_network_grads(network):
-    for _ in network.state_dict():
-        pass
+def print_network_grads(net):
+    #grad_dict = {k:v.grad for k, v in zip(net.state_dict(), net.parameters())}
+    #print(grad_dict)
+    total_norm = 0
+    for p in net.parameters():
+        param_norm = p.grad.data.norm(2)
+        total_norm += param_norm.item() ** 2
+    total_norm = total_norm ** (1. / 2)
+    print("total_grad_norm: ", total_norm)
+    #pdb.set_trace()
 
 def np2torch(x, cast_double_to_float=True):
     """

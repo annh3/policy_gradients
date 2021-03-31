@@ -141,6 +141,7 @@ class PolicyGradient(object):
 
             for step in range(self.config.max_ep_len):
                 states.append(state)
+                pdb.set_trace()
                 action = self.policy.act(states[-1][None])[0]
                 state, reward, done, info = env.step(action)
                 actions.append(action)

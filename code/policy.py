@@ -39,7 +39,11 @@ class BasePolicy:
         observations = np2torch(observations)
         #######################################################
         #########   YOUR CODE HERE - 1-3 lines.    ############
-        sampled_actions = self.action_distribution(observations).sample()
+        action_distribution = self.action_distribution(observations)
+        #print("action distribution logits: ", action_distribution.logits)
+        #print("action distribution probs: ", action_distribution.probs)
+        #print("observations: ", observations)
+        sampled_actions = action_distribution.sample()
         sampled_actions = sampled_actions.numpy()
         #######################################################
         #########          END YOUR CODE.          ############
