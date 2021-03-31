@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import gym
 from policy_gradient import PolicyGradient
+from ppo import PPO
 from config import get_config
 import random
 
@@ -30,5 +31,6 @@ if __name__ == '__main__':
     config = get_config(args.env_name, args.use_baseline, args.seed)
     env = gym.make(config.env_name)
     # train model
-    model = PolicyGradient(env, config, args.seed)
+    #model = PolicyGradient(env, config, args.seed)
+    model = PPO(env, config, args.seed)
     model.run()
