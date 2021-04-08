@@ -6,7 +6,7 @@ class config_cartpole:
         self.record = False
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
-        alg_str = 'alg=' + str(alg)
+        alg_str = str(alg)
         # output config
         self.output_path = "results/{}-{}-{}-{}/".format(alg_str, self.env_name, baseline_str, seed_str)
         self.model_output = self.output_path + "model.weights/"
@@ -41,7 +41,7 @@ class config_pendulum:
         self.record = False
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
-        alg_str = 'alg=' + str(alg)
+        alg_str = str(alg)
         # output config
         self.output_path = "results/{}-{}-{}-{}/".format(alg_str, self.env_name, baseline_str, seed_str)
         self.model_output = self.output_path + "model.weights/"
@@ -76,7 +76,7 @@ class config_cheetah:
         self.record = False
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
-        alg_str = 'alg=' + str(alg)
+        alg_str = str(alg)
         # output config
         self.output_path = "results/{}-{}-{}-{}/".format(alg_str, self.env_name, baseline_str, seed_str)
         self.model_output = self.output_path + "model.weights/"
