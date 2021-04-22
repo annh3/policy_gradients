@@ -50,6 +50,18 @@ class TabularPolicyGradient(object):
 
 		self.init_policy()
 
+	def update_averages():
+		"""
+		For performance logging
+		"""
+		raise NotImplementedError
+
+	def record_summary():
+		"""
+		For performance logging
+		"""
+		raise NotImplementedError
+
 	"""
 	Trying to figure out best way to update target networks
 
@@ -97,16 +109,35 @@ class TabularPolicyGradient(object):
 	def update_target_q(self):
 		self.target_q_network.load_state_dict(self.q_network.state_dict())
 
+	def training_update(self):
+		"""
+    	for k in range(self.config.num_update_steps)
+    		* sample batch size of transitions from replay buffer
+    			(s,a,r,s',d)
+    		* compute targets
+    		* update Q-function by one step of gradient descent using /
+    			MSE loss: grad { 1/|B| sum Q(s,a) - y(r,s',d)^2 }
+			* update policy by one step of gradient ascent using
+				grad {1/|B| sum_s Q(s,u(s))}
+			* update target networks with polak averaging
+				do you have to save and reload weights?
+    	"""
+    	raise NotImplementedError
+
     def train(self):
     	"""
     	Performs training
 
-    	Our DDPG implementation uses a trick to improve exploration at the start 
+    	[From OpenAI]: Our DDPG implementation uses a trick to improve exploration at the start 
     	f training. For a fixed number of steps at the beginning (set with the 
     	start_steps keyword argument), the agent takes actions which are sampled 
     	from a uniform random distribution over valid actions. After that, it 
     	returns to normal DDPG exploration.
     	"""
+    	self.replay_buffer = ReplayBuffer()
+    	state = env.reset()
+        states, actions, rewards, done_mask = [], [], [], []
+
     	for t in range(self.config.total_env_interacts):
     		"""
     		# observe state
@@ -115,22 +146,49 @@ class TabularPolicyGradient(object):
     		# store (s,a,r,s',d) in replay buffer
     		"""
 
+    		"""
+    		I think that we should update the buffer
+
+    		1. when an episode is done
+    		2. right before we perform network updates
+    		"""
+    		states.append(state)
+    		action = self.policy.act(states[-1][None])[0]
+    		state, reward, done, info = env.step(action)
+            actions.append(action)
+            rewards.append(reward)
+            done_mask.append(done)
+
+            if done:
+            	"""
+            	Update replay buffer
+            	zero out lists
+            	reset environment
+            	logic for loop
+            	"""
+            	self.replay_buffer.update_buffer(states,actions,rewards,done)
+            	state = env.reset()
+            	states, actions, rewards, done_mask = [], [], [], []
+
+    	
+    		if t % self.config.update_every == 0:
+    			"""
+    			Update replay buffer
+    			zero out lists
+    			reset environment
+    			"""
+    			self.replay_buffer.update_buffer(states,actions,rewards,done)
+            	states, actions, rewards, done_mask = [], [], [], []
+    			self.training_update()
 
     		"""
-    		if t % self.config.update_every == 0, then perform update
+    		When should we perform logging?
     		"""
+    		if (t % self.config.summary_freq == 0):
+                self.update_averages(total_rewards, all_total_rewards)
+                self.record_summary(t)
 
-    		"""
-    		for k in range(self.config.num_update_steps)
-    			* sample batch size of transitions from replay buffer
-    			* compute targets
-    			* update Q-function by one step of gradient descent using /
-    				MSE loss: grad { 1/|B| sum Q(s,a) - y(r,s',d)^2 }
-				* update policy by one step of gradient ascent using
-					grad {1/|B| sum_s Q(s,u(s))}
-				* update target networks with polak averaging
-					do you have to save and reload weights?
-    		"""
+
 
 
 

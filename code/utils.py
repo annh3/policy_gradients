@@ -20,15 +20,9 @@ class ReplayBuffer(object):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
         return batch_size + 1 <= self.num_in_buffer
 
-    def store_observation(self, state):
-    	raise NotImplementedError
-
-    def store_effect(self, a, r, s_next, done):
-    	"""
-    	Store effect of taking an action
-    	"""
-    	raise NotImplementedError
-
+    def update_buffer(self, states, actions, rewards, done_mask):
+        raise NotImplementedError
+        
     """
     To-Do: Modify this
     """
