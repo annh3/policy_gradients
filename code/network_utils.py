@@ -25,19 +25,6 @@ def build_mlp(
 
     "nn.Linear" and "nn.Sequential" may be helpful.
     """
-    #######################################################
-    #########   YOUR CODE HERE - 7-15 lines.   ############
-    # modules = []
-    # modules.append(nn.Linear(input_size, size))
-    # modules.append(nn.ReLU())
-    # for _ in range(n_layers):
-    #     modules.append(nn.Linear(size,size))
-    #     modules.append(nn.ReLU())
-    # modules.append(nn.Linear(size,output_size))
-    # sequential = nn.Sequential(*modules)
-    # return sequential
-
-    #######################################################
     modules = OrderedDict()
     modules['Linear_Input'] = nn.Linear(input_size, size)
     modules['ReLU_Input'] = nn.ReLU()
@@ -48,22 +35,16 @@ def build_mlp(
     sequential = nn.Sequential(modules)
     return sequential
 
-    #######################################################
-    #########          END YOUR CODE.          ############
-
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def print_network_grads(net):
-    #grad_dict = {k:v.grad for k, v in zip(net.state_dict(), net.parameters())}
-    #print(grad_dict)
     total_norm = 0
     for p in net.parameters():
         param_norm = p.grad.data.norm(2)
         total_norm += param_norm.item() ** 2
     total_norm = total_norm ** (1. / 2)
     print("total_grad_norm: ", total_norm)
-    #pdb.set_trace()
 
 def np2torch(x, cast_double_to_float=True):
     """

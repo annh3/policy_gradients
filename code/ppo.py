@@ -37,11 +37,6 @@ class PPO(PolicyGradient):
                 path["actions"] a numpy array of the corresponding actions in the path
                 path["reward"] a numpy array of the corresponding rewards in the path
             total_rewards: the sum of all rewards encountered during this "path"
-
-        You do not have to implement anything in this function, but you will need to
-        understand what it returns, and it is worthwhile to look over the code
-        just so you understand how we are taking actions in the environment
-        and generating batches to train on.
         """
         episode = 0
         episode_rewards = []
@@ -96,58 +91,24 @@ class PPO(PolicyGradient):
                 [batch size] (and integer type) if discrete
             advantages: np.array of shape [batch size]
 
-        Perform one update on the policy using the provided data.
-        To compute the loss, you will need the log probabilities of the actions
-        given the observations. Note that the policy's action_distribution
-        method returns an instance of a subclass of
-        torch.distributions.Distribution, and that object can be used to
-        compute log probabilities.
-        See https://pytorch.org/docs/stable/distributions.html#distribution
-
-        Note:
-        PyTorch optimizers will try to minimize the loss you compute, but you
-        want to maximize the policy's performance.
+        Perform one update on the policy using the provided data..
         """
         observations = np2torch(observations)
         actions = np2torch(actions)
         advantages = np2torch(advantages)
-        #pdb.set_trace()
         prev_logprobs = np2torch(prev_logprobs)
         prev_logprobs = torch.squeeze(prev_logprobs)
         prev_logprobs = torch.max(prev_logprobs, torch.tensor(1e-5))
-        #######################################################
-        #########   YOUR CODE HERE - 5-7 lines.    ############
         self.optimizer.zero_grad()
         res = self.policy.action_distribution(observations).log_prob(actions) 
-        ratio = torch.div(res,prev_logprobs) # Is this the issue
-        #print("res: ", res)
-        #print("prev_logprob: ", prev_logprobs) 
-        #print("ratio: ", ratio)
+        ratio = torch.div(res,prev_logprobs) 
         nans = torch.isnan(ratio)
         nans_idx = (nans == True).nonzero(as_tuple=True)[0]
-        #print(nans_idx)
-        #res = self.policy.action_distribution(observations)
-        #pdb.set_trace()
-        # g (eps, A.mean()) = (1+eps)A.mean() if A.mean() >= 0 and (1-eps)A.mean() if A.mean() < 0
-        #ratio = ratio.detach().numpy()
-        #ratio = np.nan_to_num(ratio, nan=0.0, posinf=1+self.epsilon_clip, neginf=1-self.epsilon_clip)
-        #ratio = np2torch(ratio)
         clipped_ratio = torch.clamp(ratio, 1-self.epsilon_clip, 1+self.epsilon_clip)
-        #print("-----------------------------------")
-        #print("res norm: ", res.norm(2))
-        #print("prev_logprobs norm: ", prev_logprobs.norm(2))
-        #print("ratio norm: ", ratio.norm(2))
-        #print("clipped_ratio norm: ", clipped_ratio.norm(2))
-        #pdb.set_trace()
-        loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() # OMG WILL THIS WORK... WE WILL SEE
-        #print("loss norm: ", loss.norm(2))
+        loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() 
         loss.backward()
         print_network_grads(self.policy.network)
-        # torch.nn.utils.clip_grad_norm_(self.policy.parameters(), 1)
         self.optimizer.step()
-
-        #######################################################
-        #########          END YOUR CODE.          ############
 
     # override inherited method
     def train(self):
