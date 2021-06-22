@@ -7,6 +7,7 @@ from baseline_network import BaselineNetwork
 from network_utils import build_mlp, device, np2torch, print_network_grads
 from policy import CategoricalPolicy, GaussianPolicy
 from policy_gradient import PolicyGradient
+from utils import conjugate_gradient, line_search
 import pdb
 
 class TRPO(PolicyGradient):
@@ -103,7 +104,24 @@ class TRPO(PolicyGradient):
                 [batch size] (and integer type) if discrete
             advantages: np.array of shape [batch size]
 
-        Perform one update on the policy using the provided data..
+        Perform one update on the policy using the provided data.
+
+        References:
+
+        [1] https://spinningup.openai.com/en/latest/algorithms/trpo.html#pseudocode
+        [2] https://wiseodd.github.io/techblog/2018/03/11/fisher-information/
+        [3] https://github.com/ikostrikov/pytorch-trpo/blob/master/trpo.py#L56
+
+        We've passed in the advantages. We need to:
+
+        1. Estimate the policy gradient g_k
+        2. Compute the Hessian H of the sample average KL-divergence
+        ###### What is the KL divergence OF?
+        ###### Modify code to store old proba as well as old log pob?
+        ###### Read reference [2] and look at [3] to see how they're computing
+        ###### Sample Fisher information matrix (aka Hessian of KL divergence)
+        3. Compute x_k using H and g_k via conjugate gradient descent
+        4. Update the policy parameters with backtracking line search
         """
         observations = np2torch(observations)
         actions = np2torch(actions)
@@ -113,10 +131,14 @@ class TRPO(PolicyGradient):
         prev_logprobs = torch.max(prev_logprobs, torch.tensor(1e-5))
         self.optimizer.zero_grad()
         res = self.policy.action_distribution(observations).log_prob(actions) 
-        ratio = torch.div(res,prev_logprobs) 
-        nans = torch.isnan(ratio)
-        nans_idx = (nans == True).nonzero(as_tuple=True)[0]
-        clipped_ratio = torch.clamp(ratio, 1-self.epsilon_clip, 1+self.epsilon_clip)
+
+        # for 1. let's look at VPG implementation
+
+
+        # ratio = torch.div(res,prev_logprobs) 
+        # nans = torch.isnan(ratio)
+        # nans_idx = (nans == True).nonzero(as_tuple=True)[0]
+        # clipped_ratio = torch.clamp(ratio, 1-self.epsilon_clip, 1+self.epsilon_clip)
         loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() 
         loss.backward()
         print_network_grads(self.policy.network)
