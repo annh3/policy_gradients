@@ -4,5 +4,5 @@ Added ipython notebook to walk through the derivation and implementation of vani
 
 The contents of the notebook can now be found in a blog post [here](https://annhe.xyz/2021/04/12/policy-gradients/)
 
-06-22-21 Update: Starting implementation of TRPO
-06-22-21 To-Do: Read Fisher information matrix = Hessian of KL divergence, decide how to compute sample H
+* 06-22-21 Update: Starting implementation of TRPO
+* 06-22-21 To-Do: Read Fisher information matrix = Hessian of KL divergence, decide how to compute sample H
