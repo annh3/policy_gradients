@@ -67,3 +67,41 @@ class ReplayBuffer(object):
         assert self.can_sample(batch_size)
         idxes = sample_n_unique(lambda: random.randint(0, self.num_in_buffer - 2), batch_size)
         return self._encode_sample(idxes)
+
+"""
+06-22-21: Adding conjugate gradient descent, line search for TRPO
+"""
+
+def conjugate_gradient(A,b,tol):
+    x = np.random.rand(b.shape[0]) # unif in [0,1)
+    r = b - A @x    # calculate residual
+    if np.linalg.norm(r) < tol:
+        return x
+    p = r
+    k = 0
+    
+    while(True):
+        alpha = np.dot(r,r) / float(p.T @ A @ p)
+        x = x + alpha * p
+        r_old = r
+        r = r_old - alpha * A @ p
+        if np.linalg.norm(r) < tol:
+            return x
+        Beta = float(r.T @ r) / float(r_old.T @ r_old)
+        p = r + Beta * p
+        k = k + 1
+        if k > 10 * b.shape[0]:
+            return x
+
+def line_search(f, x_c, c, search_dir, rho, grad_dir, tol=1e-3, max_iter=100):
+    alpha = 1
+    iter = 0
+    while iter < max_iter and f(x_c + alpha * search_dir) > f(x_c) + (c * alpha * grad_dir.T @ search_dir) + tol:
+        alpha = rho * alpha
+        iter = iter + 1
+        if iter % 20 == 0:
+            print("iter: ", iter)
+            print("lhs: ", f(x_c + alpha * search_dir))
+            print("rhs: ", f(x_c) + (c * alpha * grad_dir.T @ search_dir) + tol)
+            print("\n")
+    return alpha, f(x_c + alpha * search_dir)
