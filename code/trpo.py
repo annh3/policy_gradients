@@ -15,9 +15,21 @@ class TRPO(PolicyGradient):
     """
 
     # def __init__(self, env, config, seed, logger=None):
-    def __init__(self, env, config, seed, epsilon_clip=0.2, logger=None):
+    def __init__(self, env, config, seed, epsilon_clip=0.2, kl_limit=1, backtrack_alpha=1, max_backtrack=20, logger=None):
         self.alg_name = "ppo"
         self.epsilon_clip = epsilon_clip
+
+        """
+        Adding hyper-parameters for TRPO
+
+        kl_limit = constant for back-tracking line search
+        backtrack_alpha = the constant we exponentiate in back-tracking line search
+        max_backtrack = the maximum number of backtracking steps to search on
+        """
+        self.kl_limit = kl_limit
+        self.backtrack_alpha = backtrack_alpha
+        self.max_backtrack = max_backtrack
+
 
         PolicyGradient.__init__(self, env, config, seed, logger)
 
