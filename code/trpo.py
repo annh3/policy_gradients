@@ -144,10 +144,15 @@ class TRPO(PolicyGradient):
 
         # KL-divergence - we use estimator k_3
         # r = p / q where we're sampling from q - I think q is current proba
+        # To-Do: just use torch exponentiation on this
         r = torch.div(prev_probs, self.policy.action_distribution(observations))
         # To-Do: store prev_probs, check that you are indeed getting the probabilities
         kl = (r-1) - torch.log(r)
         # take the mean?
+
+        #### Both implementations do something like this
+        # params = stochpol.trainable_variables
+        # pg = flatgrad(surr, params)
 
         def H_sample(v):
             pass
