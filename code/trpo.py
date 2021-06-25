@@ -155,7 +155,18 @@ class TRPO(PolicyGradient):
         # pg = flatgrad(surr, params)
 
         def H_sample(v):
-            pass
+            grads = torch.autograd.grad(kl, self.policy.parameters(), create_graph=True)
+            flat_grad_kl = torch.cat([grad.view(-1) for grad in grads])
+
+            kl_v = (flat_grad_kl * Variable(v)).sum()
+            grads = torch.autograd.grad(kl_v, self.policy.parameters())
+            flat_grad_grad_kl = torch.cat([grad.contiguous().view(-1) for grad in grads]).data
+
+            return flat_grad_grad_kl + v * damping
+
+        stepdir = conjugate_gradients(Fvp, -loss_grad, 10)
+        ## To-do: compute loss_grad above
+
 
         ##### Then we perform line search
 
