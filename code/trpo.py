@@ -133,6 +133,9 @@ class TRPO(PolicyGradient):
         res = self.policy.action_distribution(observations).log_prob(actions) 
 
         # for 1. let's look at VPG implementation
+        pg = torch.mean(res*advantages)
+        grads = torch.autograd.grad(pg, self.policy.parameters())
+        pg_grad = torch.cat([grad.view(-1) for grad in grads]).data
 
         ##### To-Do: set up a symbolic function for computing the Hessian of KL divergence
         ##### Figure out what the derivative is with respect to - can look at ikostrikov's implementation
@@ -164,8 +167,10 @@ class TRPO(PolicyGradient):
 
             return flat_grad_grad_kl + v * damping
 
-        stepdir = conjugate_gradients(Fvp, -loss_grad, 10)
-        ## To-do: compute loss_grad above
+        stepdir = conjugate_gradients(Fvp, pg_grad, 10)
+        ## To-do: compute loss_grad above (Done)
+
+        ## To-do: figure out why they're doing (in both implementations) all the steps after calling cg
 
 
         ##### Then we perform line search
