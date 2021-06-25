@@ -134,6 +134,28 @@ class TRPO(PolicyGradient):
 
         # for 1. let's look at VPG implementation
 
+        ##### To-Do: set up a symbolic function for computing the Hessian of KL divergence
+        ##### Figure out what the derivative is with respect to - can look at ikostrikov's implementation
+        ##### Or read the paper
+        ##### My hypothesis/assumption: it's with respect to the current log probs, which we can
+        ##### Access with self.policy.action_distribution(observations).log_prob(actions)
+        ##### The question is: What parameter(s) is the Hessian with respect to?
+        ##### Then we plug this symbolic function through the conjugate gradient algorithm
+
+        # KL-divergence - we use estimator k_3
+        # r = p / q where we're sampling from q - I think q is current proba
+        r = torch.div(prev_probs, self.policy.action_distribution(observations))
+        # To-Do: store prev_probs, check that you are indeed getting the probabilities
+        kl = (r-1) - torch.log(r)
+        # take the mean?
+
+        def H_sample(v):
+            pass
+
+        ##### Then we perform line search
+
+        ##### Then we can call loss.backward() and optimizer.step() 
+
 
         # ratio = torch.div(res,prev_logprobs) 
         # nans = torch.isnan(ratio)
