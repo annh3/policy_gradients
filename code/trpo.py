@@ -12,7 +12,7 @@ import pdb
 
 class TRPO(PolicyGradient):
     """
-    Class for implementing PPO algorithm on
+    Class for implementing TRPO
     """
 
     # def __init__(self, env, config, seed, logger=None):
@@ -95,7 +95,7 @@ class TRPO(PolicyGradient):
         return paths, episode_rewards
 
     # override inherited method
-    def update_policy(self, observations, actions, advantages, prev_logprobs):
+    def update_policy(self, observations, actions, advantages, prev_logprobs, max_kl):
         """
         Args:
             observations: np.array of shape [batch size, dim(observation space)]
@@ -171,9 +171,19 @@ class TRPO(PolicyGradient):
         ## To-do: compute loss_grad above (Done)
 
         ## To-do: figure out why they're doing (in both implementations) all the steps after calling cg
+        shs = 0.5 * (stepdir * H_sample(stepdir)).sum(0, keepdim=True)
+        lm = torch.sqrt(shs / max_kl)
+        fullstep = stepdir / lm[0]
+
+        neggdotstepdir = (-loss_grad * stepdir).sum(0, keepdim=True)
+        print(("lagrange multiplier:", lm[0], "grad_norm:", loss_grad.norm()))
 
 
         ##### Then we perform line search
+        prev_params = get_flat_params_from(model)
+        success, new_params = linesearch(model, get_loss, prev_params, fullstep,
+                                     neggdotstepdir / lm[0])
+        set_flat_params_to(model, new_params)
 
         ##### Then we can call loss.backward() and optimizer.step() 
 
