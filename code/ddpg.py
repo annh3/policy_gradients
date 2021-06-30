@@ -1,206 +1,196 @@
+"""
+Baseline class for DDPG, can probably implement
+Dueling DDPG on top of it later.
+"""
+
 import numpy as np
 import torch
 import gym
 import os
 from general import get_logger, Progbar, export_plot
 from baseline_network import BaselineNetwork
-from network_utils import build_mlp, device, np2torch, print_network_grads
+from network_utils import build_mlp, device, np2torch
+from utils import ReplayBuffer
 from policy import CategoricalPolicy, GaussianPolicy
-from policy_gradient import PolicyGradient
 import pdb
 
-class PPO(PolicyGradient):
-    """
-    Class for implementing PPO algorithm on
-    """
+class TabularPolicyGradient(object):
+	"""
+	Class for implementing hybrid Q-learning
+	and policy gradient methods
+	"""
+	def __init__(self, env, config, seed, logger=None):
+		"""
+		Initialize Tabular Policy Gradient Class
 
-    # def __init__(self, env, config, seed, logger=None):
-    def __init__(self, env, config, seed, epsilon_clip=0.2, logger=None):
-        self.alg_name = "ppo"
-        self.epsilon_clip = epsilon_clip
+		Args:
+			env: an OpenAI Gym environment
+			config: class with hyperparameters
+			logger: logger instance from the logging module
+		"""
 
-        PolicyGradient.__init__(self, env, config, seed, logger)
+		# directory for training outputs
+		if not os.path.exists(config.output_path):
+			os.makedirs(config.output_path)
 
-    # override inherited method to save previous log probabilities of actions taken
-    def sample_path(self, env, num_episodes = None):
-        """
-        Sample paths (trajectories) from the environment.
+		# store hyperparameters
+		self.config = config
+		self.seed = seed
 
-        Args:
-            num_episodes: the number of episodes to be sampled
-                if none, sample one batch (size indicated by config file)
-            env: open AI Gym envinronment
+		self.logger = logger
+		if logger is None:
+			self.logger = get_logger(config.log_path)
+		self.env = env
+		self.env.seed(self.seed)
 
-        Returns:
-            paths: a list of paths. Each path in paths is a dictionary with
-                path["observation"] a numpy array of ordered observations in the path
-                path["actions"] a numpy array of the corresponding actions in the path
-                path["reward"] a numpy array of the corresponding rewards in the path
-            total_rewards: the sum of all rewards encountered during this "path"
+		# only continuous action space
+		self.observation_dim = self.env.observation_space.shape[0]
+		self.action_dim = self.env.action_space.shape[0]
+		self.lr = self.config.learning_rate
 
-        You do not have to implement anything in this function, but you will need to
-        understand what it returns, and it is worthwhile to look over the code
-        just so you understand how we are taking actions in the environment
-        and generating batches to train on.
-        """
-        episode = 0
-        episode_rewards = []
-        paths = []
-        t = 0
+		self.init_policy()
 
-        while (num_episodes or t < self.config.batch_size):
-            state = env.reset()
-            states, actions, rewards, prev_logprobs = [], [], [], []
-            episode_reward = 0
+	def update_averages():
+		"""
+		For performance logging
+		"""
+		raise NotImplementedError
 
-            for step in range(self.config.max_ep_len):
-                states.append(state)
-                #pdb.set_trace()
-                action = self.policy.act(states[-1][None])[0]
-                state_torch = states[-1][None]
-                #pdb.set_trace()
-                state_torch = np2torch(state_torch)
-                action_torch = np2torch(np.asarray(action))
-                log_prob = self.policy.action_distribution(state_torch).log_prob(action_torch) 
-                log_prob = log_prob.detach().numpy()
-                state, reward, done, info = env.step(action)
-                actions.append(action)
-                rewards.append(reward)
-                prev_logprobs.append(log_prob)
-                episode_reward += reward
-                t += 1
-                if (done or step == self.config.max_ep_len-1):
-                    episode_rewards.append(episode_reward)
-                    break
-                if (not num_episodes) and t == self.config.batch_size:
-                    break
+	def record_summary():
+		"""
+		For performance logging
+		"""
+		raise NotImplementedError
 
-            path = {"observation" : np.array(states),
-                    "reward" : np.array(rewards),
-                    "action" : np.array(actions),
-                    "prev_logprob": np.array(prev_logprobs)}
-            paths.append(path)
-            episode += 1
-            if num_episodes and episode >= num_episodes:
-                break
+	"""
+	Trying to figure out best way to update target networks
 
-        return paths, episode_rewards
+	policy_net = DQN()
+	target_net = DQN()
+	target_net.load_state_dict(policy_net.state_dict())
+	target_net.eval()
 
-    # override inherited method
-    def update_policy(self, observations, actions, advantages, prev_logprobs):
-        """
-        Args:
-            observations: np.array of shape [batch size, dim(observation space)]
-            actions: np.array of shape
-                [batch size, dim(action space)] if continuous
-                [batch size] (and integer type) if discrete
-            advantages: np.array of shape [batch size]
+	self.update_target_net_op = list(
+    map(lambda v: v[0].assign(self.polyak * v[0] + (1. - self.polyak) * v[1]), zip(self.target_vars, self.main_vars)))
+	"""
 
-        Perform one update on the policy using the provided data.
-        To compute the loss, you will need the log probabilities of the actions
-        given the observations. Note that the policy's action_distribution
-        method returns an instance of a subclass of
-        torch.distributions.Distribution, and that object can be used to
-        compute log probabilities.
-        See https://pytorch.org/docs/stable/distributions.html#distribution
+	def init_policy_networks(self):
+		"""
+		Initialize DETERMINISTIC policy
 
-        Note:
-        PyTorch optimizers will try to minimize the loss you compute, but you
-        want to maximize the policy's performance.
-        """
-        observations = np2torch(observations)
-        actions = np2torch(actions)
-        advantages = np2torch(advantages)
-        #pdb.set_trace()
-        prev_logprobs = np2torch(prev_logprobs)
-        prev_logprobs = torch.squeeze(prev_logprobs)
-        prev_logprobs = torch.max(prev_logprobs, torch.tensor(1e-5))
-        #######################################################
-        #########   YOUR CODE HERE - 5-7 lines.    ############
-        self.optimizer.zero_grad()
-        res = self.policy.action_distribution(observations).log_prob(actions) 
-        ratio = torch.div(res,prev_logprobs) # Is this the issue
-        #print("res: ", res)
-        #print("prev_logprob: ", prev_logprobs) 
-        #print("ratio: ", ratio)
-        nans = torch.isnan(ratio)
-        nans_idx = (nans == True).nonzero(as_tuple=True)[0]
-        #print(nans_idx)
-        #res = self.policy.action_distribution(observations)
-        #pdb.set_trace()
-        # g (eps, A.mean()) = (1+eps)A.mean() if A.mean() >= 0 and (1-eps)A.mean() if A.mean() < 0
-        #ratio = ratio.detach().numpy()
-        #ratio = np.nan_to_num(ratio, nan=0.0, posinf=1+self.epsilon_clip, neginf=1-self.epsilon_clip)
-        #ratio = np2torch(ratio)
-        clipped_ratio = torch.clamp(ratio, 1-self.epsilon_clip, 1+self.epsilon_clip)
-        #print("-----------------------------------")
-        #print("res norm: ", res.norm(2))
-        #print("prev_logprobs norm: ", prev_logprobs.norm(2))
-        #print("ratio norm: ", ratio.norm(2))
-        #print("clipped_ratio norm: ", clipped_ratio.norm(2))
-        #pdb.set_trace()
-        loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() # OMG WILL THIS WORK... WE WILL SEE
-        #print("loss norm: ", loss.norm(2))
-        loss.backward()
-        print_network_grads(self.policy.network)
-        # torch.nn.utils.clip_grad_norm_(self.policy.parameters(), 1)
-        self.optimizer.step()
+		Initialize target policy
+		"""
+		self.policy_network = build_mlp(input_size,output_size,n_layers,size)
+		self.policy = ContinuousPolicy(self.policy_network)
 
-        #######################################################
-        #########          END YOUR CODE.          ############
+		# we never train this one
+		self.target_policy_network = build_mlp(input_size,output_size,n_layers,size)
+		self.target_policy = ContinuousPolicy(self.target_policy_network)
 
-    # override inherited method
+		self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.policy_lr)
+
+	def update_target_policy(self):
+		self.target_policy.update_network(self.policy_network.state_dict())
+
+	def init_q_networks(self):
+		"""
+		Initialize q network
+
+		* Q(s, u(s))
+		* the Q network takes in an observation and also an action
+
+		Initialize target q network
+		"""
+		self.q_network = build_mlp(input_size+self.action_dim, 1, n_layers, size)
+		self.target_q_network = build_mlp(input_size+self.action_dim, 1, n_layers, size)
+
+		self.q_optimizer = torch.optim.Adam(self.q_network.parameters(), lr=self.q_lr)
+
+	def update_target_q(self):
+		self.target_q_network.load_state_dict(self.q_network.state_dict())
+
+	def training_update(self):
+		"""
+    	for k in range(self.config.num_update_steps)
+    		* sample batch size of transitions from replay buffer
+    			(s,a,r,s',d)
+    		* compute targets
+    		* update Q-function by one step of gradient descent using /
+    			MSE loss: grad { 1/|B| sum Q(s,a) - y(r,s',d)^2 }
+			* update policy by one step of gradient ascent using
+				grad {1/|B| sum_s Q(s,u(s))}
+			* update target networks with polak averaging
+				do you have to save and reload weights?
+    	"""
+    	raise NotImplementedError
+
     def train(self):
-        """
-        Performs training
+    	"""
+    	Performs training
 
-        You do not have to change or use anything here, but take a look
-        to see how all the code you've written fits together!
-        """
-        last_record = 0
+    	[From OpenAI]: Our DDPG implementation uses a trick to improve exploration at the start 
+    	f training. For a fixed number of steps at the beginning (set with the 
+    	start_steps keyword argument), the agent takes actions which are sampled 
+    	from a uniform random distribution over valid actions. After that, it 
+    	returns to normal DDPG exploration.
+    	"""
+    	self.replay_buffer = ReplayBuffer()
+    	state = env.reset()
+        states, actions, rewards, done_mask = [], [], [], []
 
-        self.init_averages()
-        all_total_rewards = []         # the returns of all episodes samples for training purposes
-        averaged_total_rewards = []    # the returns for each iteration
+    	for t in range(self.config.total_env_interacts):
+    		"""
+    		# observe state
+    		# (unless t < start_steps) select a by perturbing deterministic policy with Gaussian noise and clipping
+    		# observe next state, reward, and potential done signal
+    		# store (s,a,r,s',d) in replay buffer
+    		"""
 
-        for t in range(self.config.num_batches):
+    		"""
+    		I think that we should update the buffer
 
-            # collect a minibatch of samples
-            paths, total_rewards = self.sample_path(self.env)
-            all_total_rewards.extend(total_rewards)
-            observations = np.concatenate([path["observation"] for path in paths])
-            actions = np.concatenate([path["action"] for path in paths])
-            rewards = np.concatenate([path["reward"] for path in paths])
-            prev_logprobs = np.concatenate([path["prev_logprob"] for path in paths])
-            # compute Q-val estimates (discounted future returns) for each time step
-            returns = self.get_returns(paths)
+    		1. when an episode is done
+    		2. right before we perform network updates
+    		"""
+    		states.append(state)
+    		action = self.policy.act(states[-1][None])[0]
+    		state, reward, done, info = env.step(action)
+            actions.append(action)
+            rewards.append(reward)
+            done_mask.append(done)
 
-            # advantage will depend on the baseline implementation
-            advantages = self.calculate_advantage(returns, observations)
+            if done:
+            	"""
+            	Update replay buffer
+            	zero out lists
+            	reset environment
+            	logic for loop
+            	"""
+            	self.replay_buffer.update_buffer(states,actions,rewards,done)
+            	state = env.reset()
+            	states, actions, rewards, done_mask = [], [], [], []
 
-            # run training operations
-            if self.config.use_baseline:
-                self.baseline_network.update_baseline(returns, observations)
-            self.update_policy(observations, actions, advantages, prev_logprobs) # PASS IN PREV LOG PROB
+    	
+    		if t % self.config.update_every == 0:
+    			"""
+    			Update replay buffer
+    			zero out lists
+    			reset environment
+    			"""
+    			self.replay_buffer.update_buffer(states,actions,rewards,done)
+            	states, actions, rewards, done_mask = [], [], [], []
+    			self.training_update()
 
-            # logging
-            if (t % self.config.summary_freq == 0):
+    		"""
+    		When should we perform logging?
+    		"""
+    		if (t % self.config.summary_freq == 0):
                 self.update_averages(total_rewards, all_total_rewards)
                 self.record_summary(t)
 
-            # compute reward statistics for this batch and log
-            avg_reward = np.mean(total_rewards)
-            sigma_reward = np.sqrt(np.var(total_rewards) / len(total_rewards))
-            msg = "Average reward: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
-            averaged_total_rewards.append(avg_reward)
-            self.logger.info(msg)
 
-            if  self.config.record and (last_record > self.config.record_freq):
-                self.logger.info("Recording...")
-                last_record = 0
-                self.record()
 
-        self.logger.info("- Training done.")
-        np.save(self.config.scores_output, averaged_total_rewards)
-        export_plot(averaged_total_rewards, "Score", self.config.env_name, self.config.plot_output)
+
+
+
 
