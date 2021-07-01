@@ -13,15 +13,29 @@ def sample_n_unique(sampling_f, n):
     return res
 
 class ReplayBuffer(object):
-	raise NotImplementedError
 	self.num_in_buffer = 0
+    self.states = []
+    self.actions = []
+    self.rewards = []
+    self.done_mask = []
 
 	def can_sample(self, batch_size):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
         return batch_size + 1 <= self.num_in_buffer
 
     def update_buffer(self, states, actions, rewards, done_mask):
-        raise NotImplementedError
+        self.states.append(state)
+        self.actions.append(actions)
+        self.rewards.append(rewards)
+        self.done_mask.append(done_mask)
+        self.num_in_buffer += 1
+
+    def clear_buffer():
+        # easy way - clear buffer after UPDATE step of DDPG algorithm
+        self.states = []
+        self.actions = []
+        self.rewards = []
+        self.done_mask = []
         
     """
     To-Do: Modify this
