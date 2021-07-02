@@ -122,7 +122,22 @@ class TabularPolicyGradient(object):
 			* update target networks with polak averaging
 				do you have to save and reload weights?
     	"""
-    	raise NotImplementedError
+    	#raise NotImplementedError
+    	for k in range(self.config.num_update_steps):
+    		obs_batch, act_batch, rew_batch, next_obs_batch, done_mask = self.replay_buffer.sample(self.config.buffer_batch_size)
+    		targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(torch.cat(next_obs_batch,self.target_policy_network(next_obs_batch)))
+    		# do we have to freeze?
+    		loss = (self.q_network(torch.cat(obs_batch,act_batch))-targets).mean() 
+        	loss.backward()
+        	self.q_optimizer.step()
+
+        	loss = -(self.q_network(torch.cat(obs_batch,self.policy_network(obs_batch)))).mean() 
+        	loss.backward()
+        	self.policy_optimizer.step()
+
+        	# TO-DO: update target networks
+
+
 
     def train(self):
     	"""
