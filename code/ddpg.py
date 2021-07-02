@@ -136,6 +136,15 @@ class TabularPolicyGradient(object):
         	self.policy_optimizer.step()
 
         	# TO-DO: update target networks
+        	torch.save(self.q_network.state_dict(), 'q_weights')
+        	torch.save(self.target_q_network.state_dict(), 'target_q_weights')
+        	self.target_q_network.load_state_dict(self.config.polyak*torch.load('target_q_weights') + (1-self.config.polyak)*torch.load('q_weights'), strict=False)
+
+        	torch.save(self.policy_network.state_dict(), 'policy_weights')
+        	torch.save(self.target_policy_network.state_dict(), 'target_policy_weights')
+        	self.target_policy_network.load_state_dict(self.config.polyak*torch.load('target_policy_weights') + (1-self.config.polyak)*torch.load('policy_weights'), strict=False)
+
+        	# should do a check!
 
 
 
