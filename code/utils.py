@@ -19,11 +19,21 @@ class ReplayBuffer(object):
     self.rewards = []
     self.done_mask = []
 
+    def __init__(self, max_size):
+        self.max_size = max_size
+
 	def can_sample(self, batch_size):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
         return batch_size + 1 <= self.num_in_buffer
 
     def update_buffer(self, states, actions, rewards, done_mask):
+        """
+        We treat this like an LRU cache
+        Check whether we need to clear when this function is called
+        """
+        if self.num_in_buffer > self.max_size:
+            clear_buffer()
+            
         self.states.extend(state)
         self.actions.extend(actions)
         self.rewards.extend(rewards)

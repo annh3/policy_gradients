@@ -159,7 +159,7 @@ class DDPG(object):
     	from a uniform random distribution over valid actions. After that, it 
     	returns to normal DDPG exploration.
     	"""
-    	self.replay_buffer = ReplayBuffer()
+    	self.replay_buffer = ReplayBuffer(self.config.update_every*3)  # Can change this to see how it affects things
     	state = env.reset()
         states, actions, rewards, done_mask = [], [], [], []
 
