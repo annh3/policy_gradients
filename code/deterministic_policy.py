@@ -11,12 +11,16 @@ class ContinuousPolicy(nn.Module):
 		nn.Module.__init__(self)
 		self.network = network
 
-	def act(self, state, network):
+	def act(self, state):
 		"""
 		Returns Q values for all actions
 		"""
-		raise NotImplementedError
+		action = self.network(state)
+		return action # note: this may or may not be of the correct form
 
+	"""
+	This may or may not be used
+	"""
 	def update_network(self, state_dictionary):
 		self.network.load_state_dict(state_dictionary)
 

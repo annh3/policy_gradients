@@ -36,7 +36,8 @@ result = class_method(an_object)
 eval(expression, globals=None, locals=None)
 """
 alg_names = {'ppo': 'PPO',
-            'vpg': 'PolicyGradient'
+            'vpg': 'PolicyGradient',
+            'ddpg': 'DDPG'
             }
 
 

@@ -24,11 +24,11 @@ class ReplayBuffer(object):
         return batch_size + 1 <= self.num_in_buffer
 
     def update_buffer(self, states, actions, rewards, done_mask):
-        self.states.append(state)
-        self.actions.append(actions)
-        self.rewards.append(rewards)
-        self.done_mask.append(done_mask)
-        self.num_in_buffer += 1
+        self.states.extend(state)
+        self.actions.extend(actions)
+        self.rewards.extend(rewards)
+        self.done_mask.extend(done_mask)
+        self.num_in_buffer += len(states)
 
     def clear_buffer():
         # easy way - clear buffer after UPDATE step of DDPG algorithm
