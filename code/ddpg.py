@@ -12,6 +12,7 @@ from baseline_network import BaselineNetwork
 from network_utils import build_mlp, device, np2torch
 from utils import ReplayBuffer
 from policy import CategoricalPolicy, GaussianPolicy
+from deterministic_policy import ContinuousPolicy
 import pdb
 
 class TabularPolicyGradient(object):
@@ -177,7 +178,7 @@ class TabularPolicyGradient(object):
     		2. right before we perform network updates
     		"""
     		states.append(state)
-    		action = self.policy.act(states[-1][None])[0]
+    		action = self.policy.act(states[-1][None])[0] ## do we need to use our Continuous Policy class?
     		state, reward, done, info = env.step(action)
             actions.append(action)
             rewards.append(reward)
