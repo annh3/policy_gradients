@@ -6,6 +6,7 @@ import torch
 import gym
 from policy_gradient import PolicyGradient
 from ppo import PPO
+from ddpg import DDPG
 from config import get_config
 import random
 

@@ -13,16 +13,16 @@ def sample_n_unique(sampling_f, n):
     return res
 
 class ReplayBuffer(object):
-	self.num_in_buffer = 0
-    self.states = []
-    self.actions = []
-    self.rewards = []
-    self.done_mask = []
 
     def __init__(self, max_size):
         self.max_size = max_size
+        self.num_in_buffer = 0
+        self.states = []
+        self.actions = []
+        self.rewards = []
+        self.done_mask = []
 
-	def can_sample(self, batch_size):
+    def can_sample(self, batch_size):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
         return batch_size + 1 <= self.num_in_buffer
 
@@ -33,7 +33,7 @@ class ReplayBuffer(object):
         """
         if self.num_in_buffer > self.max_size:
             clear_buffer()
-            
+
         self.states.extend(state)
         self.actions.extend(actions)
         self.rewards.extend(rewards)
