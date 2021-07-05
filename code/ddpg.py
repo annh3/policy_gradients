@@ -15,7 +15,7 @@ from policy import CategoricalPolicy, GaussianPolicy
 from deterministic_policy import ContinuousPolicy
 import pdb
 
-class TabularPolicyGradient(object):
+class DDPG(object):
 	"""
 	Class for implementing hybrid Q-learning
 	and policy gradient methods
