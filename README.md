@@ -17,6 +17,7 @@ In Progress:
 * 06-25-21 Update: Added notes folder and notes on KL divergence
 * 07-02-21 Update: Fleshed out code for DDPG
 * 07-02-21 To-Do: Test and debug DDPG on MuJoCo tasks
+* 07-05-21 Update: "Plumbing" for DDPG implementation
 
 ### Notes for Running
 
