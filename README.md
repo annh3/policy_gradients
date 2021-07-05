@@ -17,3 +17,9 @@ In Progress:
 * 06-25-21 Update: Added notes folder and notes on KL divergence
 * 07-02-21 Update: Fleshed out code for DDPG
 * 07-02-21 To-Do: Test and debug DDPG on MuJoCo tasks
+
+### Notes for Running
+
+python main.py --env-name ENV --seed SEED --no-baseline
+
+python plot_by_alg.py --d DIRECTORY --env-name ENV --seeds SEEDS (comma-separated) --algs ALGS (comma-separated)
