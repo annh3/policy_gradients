@@ -101,7 +101,7 @@ class DDPG(object):
         self.target_policy_network = build_mlp(self.observation_dim,self.action_dim,self.config.n_layers, self.config.layer_size)
         self.target_policy = ContinuousPolicy(self.target_policy_network)
 
-        self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.lr)
+        self.policy_optimizer = torch.optim.Adam(self.policy.network.parameters(), lr=self.lr)
 
     def update_target_policy(self):
         self.target_policy.update_network(self.policy_network.state_dict())
@@ -193,7 +193,7 @@ class DDPG(object):
             """
             states.append(state)
             action = self.policy.act(states[-1][None])[0] ## do we need to use our Continuous Policy class?
-            state, reward, done, info = env.step(action)
+            state, reward, done, info = self.env.step(action)
             actions.append(action)
             rewards.append(reward)
             done_mask.append(done)
