@@ -24,3 +24,5 @@ In Progress:
 python main.py --env-name ENV --seed SEED --alg ALG-NAME --no-baseline
 
 python plot_by_alg.py --d DIRECTORY --env-name ENV --seeds SEEDS (comma-separated) --algs ALGS (comma-separated)
+
+DDPG takes only continuous action envs - use env 'ant'
