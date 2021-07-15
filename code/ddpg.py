@@ -43,14 +43,14 @@ class DDPG(object):
             self.logger = get_logger(config.log_path)
         self.env = env
         self.env.seed(self.seed)
+        self.discrete = isinstance(env.action_space, gym.spaces.Discrete)
 
         # only continuous action space
         self.observation_dim = self.env.observation_space.shape[0]
-        pdb.set_trace()
-        self.action_dim = self.env.action_space.shape[0]
+        self.action_dim = self.env.action_space.n if self.discrete else self.env.action_space.shape[0]
         self.lr = self.config.learning_rate
 
-        self.init_policy()
+        self.init_policy_networks()
 
     def update_averages():
         """
@@ -58,7 +58,7 @@ class DDPG(object):
         """
         raise NotImplementedError
 
-    def record_summary():
+    def record():
         """
         For performance logging
         """
@@ -82,14 +82,14 @@ class DDPG(object):
 
         Initialize target policy
         """
-        self.policy_network = build_mlp(input_size,output_size,n_layers,size)
+        self.policy_network = build_mlp(self.observation_dim,self.action_dim,self.config.n_layers, self.config.layer_size)
         self.policy = ContinuousPolicy(self.policy_network)
 
         # we never train this one
-        self.target_policy_network = build_mlp(input_size,output_size,n_layers,size)
+        self.target_policy_network = build_mlp(self.observation_dim,self.action_dim,self.config.n_layers, self.config.layer_size)
         self.target_policy = ContinuousPolicy(self.target_policy_network)
 
-        self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.policy_lr)
+        self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.lr)
 
     def update_target_policy(self):
         self.target_policy.update_network(self.policy_network.state_dict())
@@ -103,8 +103,8 @@ class DDPG(object):
 
         Initialize target q network
         """
-        self.q_network = build_mlp(input_size+self.action_dim, 1, n_layers, size)
-        self.target_q_network = build_mlp(input_size+self.action_dim, 1, n_layers, size)
+        self.q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
+        self.target_q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
 
         self.q_optimizer = torch.optim.Adam(self.q_network.parameters(), lr=self.q_lr)
 
@@ -214,9 +214,16 @@ class DDPG(object):
                 self.update_averages(total_rewards, all_total_rewards)
                 self.record_summary(t)
 
-
-
-
-
-
+    def run(self):
+        """
+        Apply procedures of training for a DPPG.
+        """
+        # record one game at the beginning
+        if self.config.record:
+            self.record()
+        # model
+        self.train()
+        # record one game at the end
+        if self.config.record:
+            self.record()
 
