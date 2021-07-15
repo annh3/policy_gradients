@@ -44,6 +44,7 @@ class DDPG(object):
         self.env = env
         self.env.seed(self.seed)
         self.discrete = isinstance(env.action_space, gym.spaces.Discrete)
+        print("is discrete: " , self.discrete)
 
         # only continuous action space
         self.observation_dim = self.env.observation_space.shape[0]
@@ -52,17 +53,28 @@ class DDPG(object):
 
         self.init_policy_networks()
 
-    def update_averages():
-        """
-        For performance logging
-        """
-        raise NotImplementedError
+    def init_averages(self):
+        self.avg_reward = 0.
+        self.max_reward = 0.
+        self.std_reward = 0.
+        self.eval_reward = 0.
 
-    def record():
+    def update_averages(self, rewards, scores_eval):
+        self.avg_reward = np.mean(rewards)
+        self.max_reward = np.max(rewards)
+        self.std_reward = np.sqrt(np.var(rewards) / len(rewards))
+
+        if len(scores_eval) > 0:
+            self.eval_reward = scores_eval[-1]
+
+    def record(self):
         """
-        For performance logging
+        Recreate an env and record a video for one episode
         """
-        raise NotImplementedError
+        env = gym.make(self.config.env_name)
+        env.seed(self.seed)
+        env = gym.wrappers.Monitor(env, self.config.record_path, video_callable=lambda x: True, resume=True)
+        self.evaluate(env, 1)
 
     """
     Trying to figure out best way to update target networks
@@ -161,7 +173,8 @@ class DDPG(object):
         returns to normal DDPG exploration.
         """
         self.replay_buffer = ReplayBuffer(self.config.update_every*3)  # Can change this to see how it affects things
-        state = env.reset()
+        state = self.env.reset()
+        #pdb.set_trace()
         states, actions, rewards, done_mask = [], [], [], []
 
         for t in range(self.config.total_env_interacts):
@@ -193,7 +206,7 @@ class DDPG(object):
                 logic for loop
                 """
                 self.replay_buffer.update_buffer(states,actions,rewards,done)
-                state = env.reset()
+                state = self.env.reset()
                 states, actions, rewards, done_mask = [], [], [], []
 
         
