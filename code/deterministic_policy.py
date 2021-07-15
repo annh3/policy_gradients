@@ -1,11 +1,10 @@
-#annhe
-
 import torch
 import torch.nn as nn
 import torch.distributions as ptd
 from policy import *
 
 from network_utils import np2torch, device
+import pdb
 
 class ContinuousPolicy(BasePolicy):
 	def __init__(self, network):
@@ -16,9 +15,10 @@ class ContinuousPolicy(BasePolicy):
 		"""
 		Returns Q values for all actions
 		"""
-		observations = np2torch(observatiosn)
+		observations = np2torch(observations)
 		actions = self.network(observations)
-		actions = actions.numpy()
+		#pdb.set_trace()
+		actions = actions.detach().numpy()
 		return actions # note: this may or may not be of the correct form
 
 	"""
