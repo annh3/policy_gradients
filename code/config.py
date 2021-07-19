@@ -6,6 +6,8 @@ class config_ant_ddpg:
         self.total_env_interacts = 200000 # can change this later, based on other configs
         self.env_name="Ant-v2"
         self.record = False
+        self.num_update_steps = 20 # change this later
+        self.buffer_batch_size = 500 # change this later 
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
         alg_str = str(alg)
@@ -21,7 +23,7 @@ class config_ant_ddpg:
 
         # model and training config
         self.num_batches            = 100 # number of batches trained on
-        self.batch_size             = 2000 # number of steps used to compute each policy update
+        self.batch_size             = 200 # number of steps used to compute each policy update
         self.max_ep_len             = 200 # maximum episode length
         self.learning_rate          = 3e-2
         self.gamma                  = 1.0 # the discount factor

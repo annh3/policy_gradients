@@ -1,5 +1,6 @@
 import numpy as np 
 import random
+import pdb
 
 def sample_n_unique(sampling_f, n):
     """Helper function. Given a function `sampling_f` that returns
@@ -24,6 +25,7 @@ class ReplayBuffer(object):
 
     def can_sample(self, batch_size):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
+        #pdb.set_trace()
         return batch_size + 1 <= self.num_in_buffer
 
     def update_buffer(self, states, actions, rewards, done_mask):
@@ -34,7 +36,7 @@ class ReplayBuffer(object):
         if self.num_in_buffer > self.max_size:
             clear_buffer()
 
-        self.states.extend(state)
+        self.states.extend(states)
         self.actions.extend(actions)
         self.rewards.extend(rewards)
         self.done_mask.extend(done_mask)

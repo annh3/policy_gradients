@@ -205,27 +205,30 @@ class DDPG(object):
                 reset environment
                 logic for loop
                 """
-                self.replay_buffer.update_buffer(states,actions,rewards,done)
+                self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 state = self.env.reset()
                 states, actions, rewards, done_mask = [], [], [], []
 
         
-            if t % self.config.update_every == 0:
+            if t % self.config.update_every == 0 and t > 0:
+                #pdb.set_trace()
                 """
                 Update replay buffer
                 zero out lists
                 reset environment
                 """
-                self.replay_buffer.update_buffer(states,actions,rewards,done)
+                self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 states, actions, rewards, done_mask = [], [], [], []
                 self.training_update()
 
             """
             When should we perform logging?
+
+            TO-D0: take care of this in a bit
             """
-            if (t % self.config.summary_freq == 0):
-                self.update_averages(total_rewards, all_total_rewards)
-                self.record_summary(t)
+            # if t % self.config.summary_freq == 0 and t > 0:
+            #     self.update_averages(total_rewards, all_total_rewards)
+            #     self.record_summary(t)
 
     def run(self):
         """
