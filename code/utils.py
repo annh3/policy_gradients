@@ -16,6 +16,7 @@ def sample_n_unique(sampling_f, n):
 class ReplayBuffer(object):
 
     def __init__(self, max_size):
+        print("Initializing ReplayBuffer with maximum size: ", max_size)
         self.max_size = max_size
         self.num_in_buffer = 0
         self.states = []
@@ -53,13 +54,22 @@ class ReplayBuffer(object):
     To-Do: Modify this
     """
     def _encode_sample(self, idxes):
-        obs_batch      = np.concatenate([self._encode_observation(idx)[None] for idx in idxes], 0)
-        act_batch      = self.action[idxes]
-        rew_batch      = self.reward[idxes]
-        next_obs_batch = np.concatenate([self._encode_observation(idx + 1)[None] for idx in idxes], 0)
-        done_mask      = np.array([1.0 if self.done[idx] else 0.0 for idx in idxes], dtype=np.float32)
+        #pdb.set_trace()
+        #act_batch      = self.actions[idxes]
+        # Let's try this
+        rew_batch = np.array([self.rewards[idx] for idx in idxes])
+        act_batch = np.array([self.actions[idx] for idx in idxes])
+        #rew_batch      = self.rewards[idxes]
+        #pdb.set_trace()
+        #obs_batch      = np.concatenate([self._encode_observation(idx)[None] for idx in idxes], 0)
+        obs_batch = np.array([self.states[idx] for idx in idxes])
+        next_obs_batch = np.array([self.states[idx + 1] for idx in idxes])
+        #next_obs_batch = np.concatenate([self._encode_observation(idx + 1)[None] for idx in idxes], 0)
+        done_mask_batch      = np.array([1.0 if self.done_mask[idx] else 0.0 for idx in idxes], dtype=np.float32)
 
-        return obs_batch, act_batch, rew_batch, next_obs_batch, done_mask
+        #pdb.set_trace()
+
+        return obs_batch, act_batch, rew_batch, next_obs_batch, done_mask_batch
 
     def sample(self, batch_size):
         """Sample `batch_size` different transitions.
