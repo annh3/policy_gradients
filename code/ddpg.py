@@ -146,7 +146,13 @@ class DDPG(object):
             rew_batch = np2torch(rew_batch)
             next_obs_batch = np2torch(next_obs_batch)
             done_mask = np2torch(done_mask)
-            targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(torch.cat(next_obs_batch,self.target_policy_network(next_obs_batch)))
+            #pdb.set_trace()
+            tuple2cat = (torch.transpose(next_obs_batch, 0, 1),torch.transpose(self.target_policy_network(next_obs_batch),0,1))
+            targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(torch.cat(tuple2cat))
+            pdb.set_trace()
+            # to-do: check Q network size
+            # to-do: check existing implementations of DDPG to see how they do this <-- I think this one is more promising... ok save for later
+
             # do we have to freeze?
             loss = (self.q_network(torch.cat(obs_batch,act_batch))-targets).mean() 
             loss.backward()
