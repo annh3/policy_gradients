@@ -52,6 +52,7 @@ class DDPG(object):
         self.lr = self.config.learning_rate
 
         self.init_policy_networks()
+        self.init_q_networks()
 
     def init_averages(self):
         self.avg_reward = 0.
@@ -118,7 +119,7 @@ class DDPG(object):
         self.q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
         self.target_q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
 
-        self.q_optimizer = torch.optim.Adam(self.q_network.parameters(), lr=self.q_lr)
+        self.q_optimizer = torch.optim.Adam(self.q_network.parameters(), lr=self.config.q_lr)
 
     def update_target_q(self):
         self.target_q_network.load_state_dict(self.q_network.state_dict())
@@ -139,6 +140,12 @@ class DDPG(object):
         #raise NotImplementedError
         for k in range(self.config.num_update_steps):
             obs_batch, act_batch, rew_batch, next_obs_batch, done_mask = self.replay_buffer.sample(self.config.buffer_batch_size)
+            # I think you need to convert everything to a tensor
+            obs_batch = np2torch(obs_batch)
+            act_batch = np2torch(act_batch)
+            rew_batch = np2torch(rew_batch)
+            next_obs_batch = np2torch(next_obs_batch)
+            done_mask = np2torch(done_mask)
             targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(torch.cat(next_obs_batch,self.target_policy_network(next_obs_batch)))
             # do we have to freeze?
             loss = (self.q_network(torch.cat(obs_batch,act_batch))-targets).mean() 
