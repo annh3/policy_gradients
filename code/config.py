@@ -7,7 +7,8 @@ class config_ant_ddpg:
         self.env_name="Ant-v2"
         self.record = False
         self.num_update_steps = 20 # change this later
-        self.buffer_batch_size = 500 # change this later 
+        self.buffer_batch_size = 50 # change this later 
+        self.q_lr = 1e-3 # change this later
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
         alg_str = str(alg)
@@ -32,7 +33,7 @@ class config_ant_ddpg:
 
         # parameters for the policy and baseline models
         self.n_layers               = 1
-        self.layer_size             = 64
+        self.layer_size             = 50
 
         # since we start new episodes for each batch
         assert self.max_ep_len <= self.batch_size

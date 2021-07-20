@@ -116,6 +116,7 @@ class DDPG(object):
 
         Initialize target q network
         """
+        #pdb.set_trace()
         self.q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
         self.target_q_network = build_mlp(self.observation_dim+self.action_dim, 1, self.config.n_layers, self.config.layer_size)
 
@@ -148,17 +149,23 @@ class DDPG(object):
             done_mask = np2torch(done_mask)
             #pdb.set_trace()
             tuple2cat = (torch.transpose(next_obs_batch, 0, 1),torch.transpose(self.target_policy_network(next_obs_batch),0,1))
-            targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(torch.cat(tuple2cat))
-            pdb.set_trace()
+            target_q_network_inputs = torch.transpose(torch.cat(tuple2cat),0,1)
+            targets = rew_batch + self.config.gamma * (1-done_mask) * self.target_q_network(target_q_network_inputs)
+            # pdb.set_trace()
             # to-do: check Q network size
             # to-do: check existing implementations of DDPG to see how they do this <-- I think this one is more promising... ok save for later
 
             # do we have to freeze?
-            loss = (self.q_network(torch.cat(obs_batch,act_batch))-targets).mean() 
+            # To-Do: CHECK ALL OF THIS
+            tuple2cat = (torch.transpose(obs_batch, 0, 1),torch.transpose(self.target_policy_network(act_batch),0,1))
+            q_network_inputs = torch.transpose(torch.cat(tuple2cat),0,1)
+            loss = (self.q_network(q_network_inputs)-targets).mean() 
             loss.backward()
             self.q_optimizer.step()
 
-            loss = -(self.q_network(torch.cat(obs_batch,self.policy_network(obs_batch)))).mean() 
+            tuple2cat = (torch.transpose(obs_batch,0,1), torch.transpose(self.policy_network(obs_batch),0,1))
+            policy_loss_input = torch.transpose(torch.cat(tuple2cat),0,1)
+            loss = -(self.q_network(policy_loss_input)).mean() 
             loss.backward()
             self.policy_optimizer.step()
 
