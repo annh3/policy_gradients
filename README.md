@@ -18,6 +18,7 @@ In Progress:
 * 07-02-21 Update: Fleshed out code for DDPG
 * 07-02-21 To-Do: Test and debug DDPG on MuJoCo tasks
 * 07-05-21 Update: "Plumbing" for DDPG implementation
+* 07-19-21 Update: continue "plumbing" DDPG; next - look up concatenation for q network input in existing implementations
 
 ### Notes for Running
 
