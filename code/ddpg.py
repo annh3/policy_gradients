@@ -14,6 +14,7 @@ from utils import ReplayBuffer
 from policy import CategoricalPolicy, GaussianPolicy
 from deterministic_policy import ContinuousPolicy
 import pdb
+import time
 
 class DDPG(object):
     """
@@ -249,6 +250,13 @@ class DDPG(object):
             """
             states.append(state)
             action = self.policy.act(states[-1][None])[0] ## do we need to use our Continuous Policy class?
+            """
+            My hypothesis is that we're getting actions that are NaNs
+            """
+            if np.any(np.isnan(action)):
+                pdb.set_trace()
+
+            time.sleep(.002)
             state, reward, done, info = self.env.step(action)
             actions.append(action)
             rewards.append(reward)
@@ -275,7 +283,12 @@ class DDPG(object):
                 """
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 states, actions, rewards, done_mask = [], [], [], []
-                self.training_update()
+                print("ABOUT TO CALL TRAINING UPDATE")
+                """
+                To-Do: Debug this modulo stuff with batch sizes and update every (you know)
+                """
+                if self.replay_buffer.can_sample(self.config.buffer_batch_size):
+                    self.training_update()
 
             """
             When should we perform logging?

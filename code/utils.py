@@ -27,6 +27,8 @@ class ReplayBuffer(object):
     def can_sample(self, batch_size):
         """Returns true if `batch_size` different transitions can be sampled from the buffer."""
         #pdb.set_trace()
+        print("BATCH SIZE: ", batch_size)
+        print("NUM IN BUFFER: ", self.num_in_buffer)
         return batch_size + 1 <= self.num_in_buffer
 
     def update_buffer(self, states, actions, rewards, done_mask):
