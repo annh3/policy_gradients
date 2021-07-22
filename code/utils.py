@@ -35,7 +35,7 @@ class ReplayBuffer(object):
         Check whether we need to clear when this function is called
         """
         if self.num_in_buffer > self.max_size:
-            clear_buffer()
+            self.clear_buffer()
 
         self.states.extend(states)
         self.actions.extend(actions)
@@ -43,17 +43,21 @@ class ReplayBuffer(object):
         self.done_mask.extend(done_mask)
         self.num_in_buffer += len(states)
 
-    def clear_buffer():
+    def clear_buffer(self):
         # easy way - clear buffer after UPDATE step of DDPG algorithm
+        print("CLEAR BUFFER IS BEING CALLED")
         self.states = []
         self.actions = []
         self.rewards = []
         self.done_mask = []
+        self.num_in_buffer = 0
         
     """
     To-Do: Modify this
     """
     def _encode_sample(self, idxes):
+        print("max index: ", max(idxes))
+        print("buffer length: ", len(self.actions))
         #pdb.set_trace()
         #act_batch      = self.actions[idxes]
         # Let's try this
