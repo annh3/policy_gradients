@@ -9,6 +9,7 @@ class config_ant_ddpg:
         self.num_update_steps = 20 # change this later
         self.buffer_batch_size = 50 # change this later 
         self.q_lr = 1e-3 # change this later
+        self.polyak = 0.995
         baseline_str = 'baseline' if use_baseline else 'no_baseline'
         seed_str = 'seed=' + str(seed)
         alg_str = str(alg)

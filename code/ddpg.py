@@ -157,7 +157,7 @@ class DDPG(object):
 
             # do we have to freeze?
             # To-Do: CHECK ALL OF THIS
-            tuple2cat = (torch.transpose(obs_batch, 0, 1),torch.transpose(self.target_policy_network(act_batch),0,1))
+            tuple2cat = (torch.transpose(obs_batch, 0, 1),torch.transpose(self.target_policy_network(obs_batch),0,1))
             q_network_inputs = torch.transpose(torch.cat(tuple2cat),0,1)
             loss = (self.q_network(q_network_inputs)-targets).mean() 
             loss.backward()
@@ -169,14 +169,50 @@ class DDPG(object):
             loss.backward()
             self.policy_optimizer.step()
 
-            # TO-DO: update target networks
-            torch.save(self.q_network.state_dict(), 'q_weights')
-            torch.save(self.target_q_network.state_dict(), 'target_q_weights')
-            self.target_q_network.load_state_dict(self.config.polyak*torch.load('target_q_weights') + (1-self.config.polyak)*torch.load('q_weights'), strict=False)
+            """
+            From https://stackoverflow.com/questions/48560227/how-to-take-the-average-of-the-weights-of-two-networks
 
-            torch.save(self.policy_network.state_dict(), 'policy_weights')
-            torch.save(self.target_policy_network.state_dict(), 'target_policy_weights')
-            self.target_policy_network.load_state_dict(self.config.polyak*torch.load('target_policy_weights') + (1-self.config.polyak)*torch.load('policy_weights'), strict=False)
+            beta = 0.5 #The interpolation parameter    
+            params1 = model1.named_parameters()
+            params2 = model2.named_parameters()
+
+            dict_params2 = dict(params2)
+
+            for name1, param1 in params1:
+                if name1 in dict_params2:
+                    dict_params2[name1].data.copy_(beta*param1.data + (1-beta)*dict_params2[name1].data)
+
+            model.load_state_dict(dict_params2)
+            """
+
+            """
+            Trying stack-overflow technique here
+            """
+            params1 = self.q_network.named_parameters()
+            params2 = self.target_q_network.named_parameters()
+            dict_params2 = dict(params2)
+            for name1, param1 in params1:
+                if name1 in dict_params2:
+                    dict_params2[name1].data.copy_((1-self.config.polyak)*param1.data + self.config.polyak*dict_params2[name1].data)
+
+            self.target_q_network.load_state_dict(dict_params2)
+
+            # Let's try this out
+            # torch.save(self.config.polyak*self.target_q_network.state_dict() + (1-self.config.polyak)*self.q_network.state_dict(), 'new_weights')
+            # self.target_q_network.load_state_dict(torch.load('new_weights'), strict=False)
+
+            # torch.save(self.policy_network.state_dict(), 'policy_weights')
+            # torch.save(self.target_policy_network.state_dict(), 'target_policy_weights')
+            # self.target_policy_network.load_state_dict(self.config.polyak*torch.load('target_policy_weights') + (1-self.config.polyak)*torch.load('policy_weights'), strict=False)
+
+            params1 = self.policy_network.named_parameters()
+            params2 = self.target_policy_network.named_parameters()
+            dict_params2 = dict(params2)
+            for name1, param1 in params1:
+                if name1 in dict_params2:
+                    dict_params2[name1].data.copy_((1-self.config.polyak)*param1.data + self.config.polyak*dict_params2[name1].data)
+
+            self.target_policy_network.load_state_dict(dict_params2)
 
             # should do a check!
 
