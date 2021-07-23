@@ -217,6 +217,10 @@ class DDPG(object):
 
             # should do a check!
 
+        """
+        Log statistics here
+        """
+
 
 
     def train(self):
@@ -233,6 +237,10 @@ class DDPG(object):
         state = self.env.reset()
         #pdb.set_trace()
         states, actions, rewards, done_mask = [], [], [], []
+
+        self.init_averages()
+        all_total_rewards = []
+        averaged_total_rewards = []
 
         for t in range(self.config.total_env_interacts):
             """
@@ -269,9 +277,20 @@ class DDPG(object):
                 reset environment
                 logic for loop
                 """
+
+                """
+                Make sure you update the total rewards
+                """
+                all_total_rewards.extend(rewards)
+
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 state = self.env.reset()
                 states, actions, rewards, done_mask = [], [], [], []
+
+            # logging
+            if (t % self.config.summary_freq == 0):
+                self.update_averages(total_rewards, all_total_rewards)
+                self.record_summary(t)
 
         
             if t % self.config.update_every == 0 and t > 0:
@@ -281,6 +300,20 @@ class DDPG(object):
                 zero out lists
                 reset environment
                 """
+
+                """
+                Make sure you update the total rewards
+                """
+                all_total_rewards.extend(rewards)
+                """
+                Let's just put the logging here
+                """
+                avg_reward = np.mean(total_rewards)
+                sigma_reward = np.sqrt(np.var(tota_rewards) / len(total_rewards))
+                msg = "Average reward: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
+                averaged_total_rewards.append(avg_reward)
+                self.logger.info(msg)
+
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 states, actions, rewards, done_mask = [], [], [], []
                 print("ABOUT TO CALL TRAINING UPDATE")
@@ -288,7 +321,12 @@ class DDPG(object):
                 To-Do: Debug this modulo stuff with batch sizes and update every (you know)
                 """
                 if self.replay_buffer.can_sample(self.config.buffer_batch_size):
-                    self.training_update()
+                    self.training_update() # we can do logging here
+
+            # logging
+            # if (t % self.config.summary_freq == 0):
+            #     self.update_averages(total_rewards, all_total_rewards)
+            #     self.record_summary(t)
 
             """
             When should we perform logging?
@@ -298,6 +336,9 @@ class DDPG(object):
             # if t % self.config.summary_freq == 0 and t > 0:
             #     self.update_averages(total_rewards, all_total_rewards)
             #     self.record_summary(t)
+        self.logger.info("- Training done.")
+        np.save(self.config.scores_output, averaged_total_rewards)
+        export_plot(averaged_total_rewards, "Score", self.config.env_name, self.config.plot_output)
 
     def run(self):
         """
