@@ -287,11 +287,6 @@ class DDPG(object):
                 state = self.env.reset()
                 states, actions, rewards, done_mask = [], [], [], []
 
-            # logging
-            if (t % self.config.summary_freq == 0):
-                self.update_averages(total_rewards, all_total_rewards)
-                self.record_summary(t)
-
         
             if t % self.config.update_every == 0 and t > 0:
                 #pdb.set_trace()
@@ -305,14 +300,16 @@ class DDPG(object):
                 Make sure you update the total rewards
                 """
                 all_total_rewards.extend(rewards)
+
                 """
                 Let's just put the logging here
                 """
-                avg_reward = np.mean(total_rewards)
-                sigma_reward = np.sqrt(np.var(tota_rewards) / len(total_rewards))
+                avg_reward = np.mean(rewards)
+                sigma_reward = np.sqrt(np.var(rewards) / len(rewards))
                 msg = "Average reward: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
                 averaged_total_rewards.append(avg_reward)
                 self.logger.info(msg)
+                
 
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
                 states, actions, rewards, done_mask = [], [], [], []
@@ -322,6 +319,9 @@ class DDPG(object):
                 """
                 if self.replay_buffer.can_sample(self.config.buffer_batch_size):
                     self.training_update() # we can do logging here
+
+                    
+
 
             # logging
             # if (t % self.config.summary_freq == 0):
