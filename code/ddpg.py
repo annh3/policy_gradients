@@ -310,6 +310,10 @@ class DDPG(object):
                 msg = "Average reward: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
                 averaged_total_rewards.append(avg_reward)
                 self.logger.info(msg)
+
+                """
+                To-Do: Log action norms to debug MuJoCo issues
+                """
                 
 
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
