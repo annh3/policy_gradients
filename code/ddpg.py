@@ -33,6 +33,7 @@ class DDPG(object):
 
         # directory for training outputs
         if not os.path.exists(config.output_path):
+            print("OUTPUT PATH: ", config.output_path)
             os.makedirs(config.output_path)
 
         # store hyperparameters
