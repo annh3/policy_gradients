@@ -242,6 +242,7 @@ class DDPG(object):
         self.init_averages()
         all_total_rewards = []
         averaged_total_rewards = []
+        averaged_action_norms = []
 
         for t in range(self.config.total_env_interacts):
             """
@@ -314,6 +315,17 @@ class DDPG(object):
                 """
                 To-Do: Log action norms to debug MuJoCo issues
                 """
+                #pdb.set_trace()
+                avg_action_norm = 0
+                norms = []
+                for act in actions:
+                    avg_action_norm += np.linalg.norm(act)
+                    norms.append(np.linalg.norm(act))
+                avg_action_norm /= len(actions)
+                sigma_norm = np.sqrt(np.var(norms) / len(norms))
+                msg = "Average action norm: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
+                averaged_action_norms.append(avg_action_norm)
+                self.logger.info(msg)
                 
 
                 self.replay_buffer.update_buffer(states,actions,rewards,done_mask)
