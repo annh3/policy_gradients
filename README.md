@@ -19,7 +19,7 @@ In Progress:
 * 07-02-21 To-Do: Test and debug DDPG on MuJoCo tasks
 * 07-05-21 Update: "Plumbing" for DDPG implementation
 * 07-19-21 Update: continue "plumbing" DDPG
-* 07-22-21 Update: Ran into bug with MuJoCo; next - try debugging by seeing what is happening to the norm of the action vector (write plotting utils for this)
+* 07-22-21 Update: current status: avg reward and avg action norm going to negative infinity, causing MuJoCo simulation error
 
 ### Notes for Running
 
