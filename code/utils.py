@@ -147,3 +147,48 @@ def line_search(f, x_c, c, search_dir, rho, grad_dir, tol=1e-3, max_iter=100):
             print("rhs: ", f(x_c) + (c * alpha * grad_dir.T @ search_dir) + tol)
             print("\n")
     return alpha, f(x_c + alpha * search_dir)
+
+def get_flat_params_from(model):
+    params = []
+    for param in model.parameters():
+        params.append(param.data.view(-1))
+
+    flat_params = torch.cat(params)
+    return flat_params
+
+def set_flat_params_to(model, flat_params):
+    prev_ind = 0
+    for param in model.parameters():
+        flat_size = int(np.prod(list(param.size())))
+        param.data.copy_(
+            flat_params[prev_ind:prev_ind + flat_size].view(param.size()))
+        prev_ind += flat_size
+
+def normal_log_density(x, mean, log_std, std):
+    var = std.pow(2)
+    log_density = -(x - mean).pow(2) / (
+        2 * var) - 0.5 * math.log(2 * math.pi) - log_std
+    return log_density.sum(1, keepdim=True)
+
+def linesearch(model,
+               f,
+               x,
+               fullstep,
+               expected_improve_rate,
+               max_backtracks=10,
+               accept_ratio=.1):
+    fval = f(True).data
+    print("fval before", fval.item())
+    for (_n_backtracks, stepfrac) in enumerate(.5**np.arange(max_backtracks)):
+        xnew = x + stepfrac * fullstep
+        set_flat_params_to(model, xnew)
+        newfval = f(True).data
+        actual_improve = fval - newfval
+        expected_improve = expected_improve_rate * stepfrac
+        ratio = actual_improve / expected_improve
+        print("a/e/r", actual_improve.item(), expected_improve.item(), ratio.item())
+
+        if ratio.item() > accept_ratio and actual_improve.item() > 0:
+            print("fval after", newfval.item())
+            return True, xnew
+    return False, x

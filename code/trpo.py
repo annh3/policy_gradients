@@ -7,7 +7,7 @@ from baseline_network import BaselineNetwork
 from network_utils import build_mlp, device, np2torch, print_network_grads
 from policy import CategoricalPolicy, GaussianPolicy
 from policy_gradient import PolicyGradient
-from utils import conjugate_gradient, line_search
+from utils import conjugate_gradient, linesearch, normal_log_density, set_flat_params_to, get_flat_params_from
 import pdb
 
 class TRPO(PolicyGradient):
@@ -126,76 +126,104 @@ class TRPO(PolicyGradient):
         observations = np2torch(observations)
         actions = np2torch(actions)
         advantages = np2torch(advantages)
+        """
+        We may not need this
+        """
         prev_logprobs = np2torch(prev_logprobs)
         prev_logprobs = torch.squeeze(prev_logprobs)
         prev_logprobs = torch.max(prev_logprobs, torch.tensor(1e-5))
+        """
+        End we may not need this
+        """
         self.optimizer.zero_grad()
-        res = self.policy.action_distribution(observations).log_prob(actions) 
+        cur_logprobs = self.policy.action_distribution(observations).log_prob(actions) 
+        fixed_cur_logprobs = cur_logprobs.detach()
+        # if this doesn't work, follow the approach in the tutorial
+        action_loss = Variable(advantages) * torch.exp(cur_logprobs - prev_logprobs)
 
-        # for 1. let's look at VPG implementation
-        pg = torch.mean(res*advantages)
-        grads = torch.autograd.grad(pg, self.policy.parameters())
-        pg_grad = torch.cat([grad.view(-1) for grad in grads]).data
+        grad1 = torch.autograd.grad(action_loss, self.policy.network.parameters(), retain_graph=True)
 
-        ##### To-Do: set up a symbolic function for computing the Hessian of KL divergence
-        ##### Figure out what the derivative is with respect to - can look at ikostrikov's implementation
-        ##### Or read the paper
-        ##### My hypothesis/assumption: it's with respect to the current log probs, which we can
-        ##### Access with self.policy.action_distribution(observations).log_prob(actions)
-        ##### The question is: What parameter(s) is the Hessian with respect to?
-        ##### Then we plug this symbolic function through the conjugate gradient algorithm
+        # grad_flat will be a vector K*1, where K is the total number of parameters in the policy net
 
-        # KL-divergence - we use estimator k_3
-        # r = p / q where we're sampling from q - I think q is current proba
-        # To-Do: just use torch exponentiation on this
-        r = torch.div(prev_probs, self.policy.action_distribution(observations))
-        # To-Do: store prev_probs, check that you are indeed getting the probabilities
-        kl = (r-1) - torch.log(r)
-        # take the mean?
+        grad1_flat = torch._utils._flatten_dense_tensors(grad1)
 
-        #### Both implementations do something like this
-        # params = stochpol.trainable_variables
-        # pg = flatgrad(surr, params)
+        # Now, compute derivative using policy gradient formula another way
+        _grad2 = torch.autograd.grad(cur_logprobs, self.policy.network.parameters())
+        _grad2_flat = torch._utils._flatten_dense_tensors(_grad2)
+        grad2 = advantages*_grad2_flat
+        # assert(grad2 == grad1)
 
-        def H_sample(v):
-            grads = torch.autograd.grad(kl, self.policy.parameters(), create_graph=True)
-            flat_grad_kl = torch.cat([grad.view(-1) for grad in grads])
 
-            kl_v = (flat_grad_kl * Variable(v)).sum()
-            grads = torch.autograd.grad(kl_v, self.policy.parameters())
-            flat_grad_grad_kl = torch.cat([grad.contiguous().view(-1) for grad in grads]).data
+        """
+        Ok here we need some work!!!
+        
+        We've computed the action loss
 
-            return flat_grad_grad_kl + v * damping
+        Now we need to find (1) the right step direction, and 
+        (2) the right step size
 
-        stepdir = conjugate_gradients(Fvp, pg_grad, 10)
-        ## To-do: compute loss_grad above (Done)
+        """
+        def get_kl():
+            action_prob1 = self.network.forward(observations)
+            # calling .data detaches action_prob0 from the graph
+            action_prob0 = Variable(action_prob1.data)
+            kl = action_prob0 * (torch.log(action_prob0) - torch.log(action_prob1))
+            return kl.sum(1, keepdim=True)
 
-        ## To-do: figure out why they're doing (in both implementations) all the steps after calling cg
-        shs = 0.5 * (stepdir * H_sample(stepdir)).sum(0, keepdim=True)
+        """
+        Recall: Hs = g
+        s = H^{-1}g
+
+        ^ we can calculate this Fisher-vector product directly
+
+        Instead of ever caculating the Hessian
+        """
+
+        # Note that v is g, our action_loss
+        def Fvp_direct(v):
+            damping = 1e-2
+            kl_sum = get_kl()
+            # compute the first derivative or Kl wrt the network parameters
+            # flatten into a vector
+            grads = torch.autograd.grad(kl_sum, self.network.parameters(), create_graph=True)
+            grads_flat = torch.cat([grad.view(-1) for grad in grads])
+            # compute the dot prodct with the input vector
+            grads_v = torch.sum(grads_flat * v)
+            # now compute the derivative again
+            grads_grads_v = torch.autograd.grad(grads_v, self.network.parameters(), create_grad=False)
+            flat_grad_grad_v = torch.cat([grad.contiguous().view(-1) for grad in grads_grads_v]).data
+            return flat_grad_grad_v + v * damping
+
+        def get_loss(volatile=False):
+            if volatile:
+                with torch.no_grad():
+                    action_means, action_log_stds, action_stds = self.policy.network(Variable(observations))
+            else:
+                action_means, action_log_stds, action_stds = self.policy.network(Variable(observations))
+                
+            log_prob = normal_log_density(Variable(actions), action_means, action_log_stds, action_stds)
+            action_loss = -Variable(advantages) * torch.exp(log_prob - Variable(fixed_log_prob))
+            return action_loss.mean()
+
+        stepdir = conjugate_gradient(Fvp_direct, -action_loss, 10)
+
+        shs = 0.5 * (stepdir * Fvp(stepdir)).sum(0, keepdim=True)
+
         lm = torch.sqrt(shs / max_kl)
         fullstep = stepdir / lm[0]
 
         neggdotstepdir = (-loss_grad * stepdir).sum(0, keepdim=True)
         print(("lagrange multiplier:", lm[0], "grad_norm:", loss_grad.norm()))
 
-
-        ##### Then we perform line search
-        prev_params = get_flat_params_from(model)
-        success, new_params = linesearch(model, get_loss, prev_params, fullstep,
+        prev_params = get_flat_params_from(self.policy.network)
+        """
+        We need to pass the dynamic evaluation of the aciton loss to line search
+        """
+        success, new_params = linesearch(self.policy.network, get_loss, prev_params, fullstep,
                                      neggdotstepdir / lm[0])
         set_flat_params_to(model, new_params)
 
-        ##### Then we can call loss.backward() and optimizer.step() 
-
-
-        # ratio = torch.div(res,prev_logprobs) 
-        # nans = torch.isnan(ratio)
-        # nans_idx = (nans == True).nonzero(as_tuple=True)[0]
-        # clipped_ratio = torch.clamp(ratio, 1-self.epsilon_clip, 1+self.epsilon_clip)
-        loss = -(torch.min(ratio,clipped_ratio) * advantages).mean() 
-        loss.backward()
-        print_network_grads(self.policy.network)
-        self.optimizer.step()
+        return action_loss
 
     # override inherited method
     def train(self):
@@ -229,7 +257,7 @@ class TRPO(PolicyGradient):
             # run training operations
             if self.config.use_baseline:
                 self.baseline_network.update_baseline(returns, observations)
-            self.update_policy(observations, actions, advantages, prev_logprobs) # PASS IN PREV LOG PROB
+            self.update_policy(observations, actions, advantages, prev_logprobs, kl_limit) # PASS IN PREV LOG PROB
 
             # logging
             if (t % self.config.summary_freq == 0):
