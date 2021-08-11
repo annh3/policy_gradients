@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import gym
 from policy_gradient import PolicyGradient
+from trpo import TRPO
 from ppo import PPO
 from ddpg import DDPG
 from config import get_config
@@ -14,7 +15,7 @@ import pdb
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--env-name', required=True, type=str,
-                    choices=['cartpole', 'pendulum', 'cheetah'])
+                    choices=['cartpole', 'pendulum', 'cheetah', 'ant'])
 parser.add_argument('--baseline', dest='use_baseline', action='store_true')
 parser.add_argument('--no-baseline', dest='use_baseline', action='store_false')
 parser.add_argument('--seed', type=int, default=1)
@@ -38,7 +39,8 @@ eval(expression, globals=None, locals=None)
 """
 alg_names = {'ppo': 'PPO',
             'vpg': 'PolicyGradient',
-            'ddpg': 'DDPG'
+            'ddpg': 'DDPG',
+            'trpo': 'TRPO'
             }
 
 
