@@ -20,6 +20,7 @@ In Progress:
 * 07-05-21 Update: "Plumbing" for DDPG implementation
 * 07-19-21 Update: continue "plumbing" DDPG
 * 07-22-21 Update: current status: avg reward and avg action norm going to negative infinity, causing MuJoCo simulation error
+* 08-10-21 Update: Major fleshing out of TRPO, TRPO instantiated but training hangs
 
 ### Notes for Running
 
