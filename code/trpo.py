@@ -244,6 +244,7 @@ class TRPO(PolicyGradient):
 
             # collect a minibatch of samples
             paths, total_rewards = self.sample_path(self.env)
+            print("sampled path")
             all_total_rewards.extend(total_rewards)
             observations = np.concatenate([path["observation"] for path in paths])
             actions = np.concatenate([path["action"] for path in paths])
@@ -251,10 +252,11 @@ class TRPO(PolicyGradient):
             prev_logprobs = np.concatenate([path["prev_logprob"] for path in paths])
             # compute Q-val estimates (discounted future returns) for each time step
             returns = self.get_returns(paths)
+            print("APPLES 1")
 
             # advantage will depend on the baseline implementation
             advantages = self.calculate_advantage(returns, observations)
-
+            print("APPLES 2")
             # run training operations
             if self.config.use_baseline:
                 self.baseline_network.update_baseline(returns, observations)
@@ -271,7 +273,7 @@ class TRPO(PolicyGradient):
             msg = "Average reward: {:04.2f} +/- {:04.2f}".format(avg_reward, sigma_reward)
             averaged_total_rewards.append(avg_reward)
             self.logger.info(msg)
-
+            print("APPLES 3")
             if  self.config.record and (last_record > self.config.record_freq):
                 self.logger.info("Recording...")
                 last_record = 0
