@@ -31,7 +31,7 @@ class TRPO(PolicyGradient):
         self.backtrack_alpha = backtrack_alpha
         self.max_backtrack = max_backtrack
 
-
+        print("Initializing TRPO")
         PolicyGradient.__init__(self, env, config, seed, logger)
 
     # override inherited method to save previous log probabilities of actions taken
@@ -240,6 +240,7 @@ class TRPO(PolicyGradient):
         averaged_total_rewards = []    # the returns for each iteration
 
         for t in range(self.config.num_batches):
+            print("t: ", t)
 
             # collect a minibatch of samples
             paths, total_rewards = self.sample_path(self.env)
@@ -279,4 +280,27 @@ class TRPO(PolicyGradient):
         self.logger.info("- Training done.")
         np.save(self.config.scores_output, averaged_total_rewards)
         export_plot(averaged_total_rewards, "Score", self.config.env_name, self.config.plot_output)
+
+    def record(self):
+        """
+        Recreate an env and record a video for one episode
+        """
+        env = gym.make(self.config.env_name)
+        env.seed(self.seed)
+        env = gym.wrappers.Monitor(env, self.config.record_path, video_callable=lambda x: True, resume=True)
+        self.evaluate(env, 1)
+
+    def run(self):
+        """
+        Apply procedures of training for a PG.
+        """
+        # record one game at the beginning
+        # if self.config.record:
+        #     self.record()
+        # model
+        print("About to call train")
+        self.train()
+        # record one game at the end
+        # if self.config.record:
+        #     self.record()
 
